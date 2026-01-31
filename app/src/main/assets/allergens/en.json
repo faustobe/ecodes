@@ -1,0 +1,347 @@
+{
+  "lactose": {
+    "keywords": [
+      "milk",
+      "lactose",
+      "whey",
+      "casein",
+      "caseinate",
+      "caseinates",
+      "butter",
+      "cream",
+      "yogurt",
+      "yoghurt",
+      "cheese",
+      "buttermilk",
+      "lactoglobulin",
+      "lactalbumin",
+      "milk powder",
+      "skimmed milk",
+      "whole milk",
+      "milk protein",
+      "milk proteins",
+      "dairy",
+      "ricotta",
+      "mascarpone",
+      "mozzarella",
+      "parmesan",
+      "pecorino"
+    ],
+    "e_codes": [
+      "E270",
+      "E325",
+      "E326",
+      "E327",
+      "E472b",
+      "E480",
+      "E481",
+      "E482",
+      "E585",
+      "E966"
+    ]
+  },
+  "gluten": {
+    "keywords": [
+      "wheat",
+      "barley",
+      "rye",
+      "spelt",
+      "kamut",
+      "gluten",
+      "malt",
+      "barley malt",
+      "malt extract",
+      "wheat flour",
+      "semolina",
+      "bran",
+      "wheat starch",
+      "wheat protein",
+      "triticale",
+      "seitan",
+      "bulgur",
+      "couscous",
+      "breadcrumbs",
+      "farro",
+      "einkorn",
+      "durum wheat"
+    ],
+    "e_codes": [
+      "E1404",
+      "E1410",
+      "E1412",
+      "E1413",
+      "E1414",
+      "E1420",
+      "E1422",
+      "E1440",
+      "E1442",
+      "E1450"
+    ]
+  },
+  "eggs": {
+    "keywords": [
+      "egg",
+      "eggs",
+      "yolk",
+      "egg yolk",
+      "egg white",
+      "albumen",
+      "albumin",
+      "egg powder",
+      "dried egg",
+      "egg lecithin",
+      "lysozyme",
+      "ovalbumin",
+      "ovomucin",
+      "mayonnaise",
+      "meringue",
+      "whole egg",
+      "pasteurized egg"
+    ],
+    "e_codes": [
+      "E1105"
+    ]
+  },
+  "peanuts": {
+    "keywords": [
+      "peanut",
+      "peanuts",
+      "peanut butter",
+      "peanut oil",
+      "groundnut",
+      "groundnuts",
+      "arachis oil",
+      "peanut flour"
+    ],
+    "e_codes": []
+  },
+  "tree_nuts": {
+    "keywords": [
+      "hazelnut",
+      "hazelnuts",
+      "almond",
+      "almonds",
+      "walnut",
+      "walnuts",
+      "pistachio",
+      "pistachios",
+      "cashew",
+      "cashews",
+      "macadamia",
+      "brazil nut",
+      "brazil nuts",
+      "pecan",
+      "pecans",
+      "pine nut",
+      "pine nuts",
+      "chestnut",
+      "chestnuts",
+      "hazelnut flour",
+      "almond flour",
+      "hazelnut paste",
+      "almond paste",
+      "marzipan",
+      "praline",
+      "nut",
+      "nuts"
+    ],
+    "e_codes": []
+  },
+  "fish": {
+    "keywords": [
+      "fish",
+      "cod",
+      "tuna",
+      "salmon",
+      "anchovy",
+      "anchovies",
+      "sardine",
+      "sardines",
+      "mackerel",
+      "sea bream",
+      "sea bass",
+      "trout",
+      "sole",
+      "plaice",
+      "hake",
+      "stockfish",
+      "fish sauce",
+      "fish oil",
+      "fish gelatin",
+      "surimi",
+      "omega 3",
+      "fish protein"
+    ],
+    "e_codes": []
+  },
+  "crustaceans": {
+    "keywords": [
+      "crustacean",
+      "crustaceans",
+      "shrimp",
+      "shrimps",
+      "prawn",
+      "prawns",
+      "lobster",
+      "crab",
+      "crabs",
+      "crayfish",
+      "langoustine",
+      "scampi",
+      "shellfish"
+    ],
+    "e_codes": []
+  },
+  "mollusks": {
+    "keywords": [
+      "mollusk",
+      "mollusks",
+      "mollusc",
+      "molluscs",
+      "mussel",
+      "mussels",
+      "clam",
+      "clams",
+      "oyster",
+      "oysters",
+      "squid",
+      "cuttlefish",
+      "octopus",
+      "scallop",
+      "scallops",
+      "snail",
+      "snails"
+    ],
+    "e_codes": []
+  },
+  "soy": {
+    "keywords": [
+      "soy",
+      "soya",
+      "soybean",
+      "soybeans",
+      "soy flour",
+      "soy oil",
+      "soy lecithin",
+      "soy protein",
+      "soya protein",
+      "soy milk",
+      "soya milk",
+      "soy sauce",
+      "tofu",
+      "tempeh",
+      "miso",
+      "edamame",
+      "soy sprouts"
+    ],
+    "e_codes": [
+      "E322",
+      "E426"
+    ]
+  },
+  "celery": {
+    "keywords": [
+      "celery",
+      "celeriac",
+      "celery salt",
+      "celery extract",
+      "celery seed",
+      "celery seeds"
+    ],
+    "e_codes": []
+  },
+  "mustard": {
+    "keywords": [
+      "mustard",
+      "mustard seed",
+      "mustard seeds",
+      "mustard flour",
+      "mustard oil",
+      "mustard sauce"
+    ],
+    "e_codes": []
+  },
+  "sesame": {
+    "keywords": [
+      "sesame",
+      "sesame seed",
+      "sesame seeds",
+      "sesame oil",
+      "sesame paste",
+      "tahini",
+      "tahina",
+      "gomasio"
+    ],
+    "e_codes": []
+  },
+  "lupin": {
+    "keywords": [
+      "lupin",
+      "lupine",
+      "lupini",
+      "lupin flour",
+      "lupin seed",
+      "lupin seeds"
+    ],
+    "e_codes": []
+  },
+  "sulfites": {
+    "keywords": [
+      "sulfites",
+      "sulphites",
+      "sulfite",
+      "sulphite",
+      "sulphur dioxide",
+      "sulfur dioxide",
+      "bisulfite",
+      "bisulphite",
+      "metabisulfite",
+      "metabisulphite"
+    ],
+    "e_codes": [
+      "E220",
+      "E221",
+      "E222",
+      "E223",
+      "E224",
+      "E226",
+      "E227",
+      "E228"
+    ]
+  },
+  "nickel": {
+    "keywords": [
+      "cocoa",
+      "chocolate",
+      "hazelnut",
+      "hazelnuts",
+      "almond",
+      "almonds",
+      "walnut",
+      "walnuts",
+      "peanut",
+      "peanuts",
+      "licorice",
+      "liquorice",
+      "oat",
+      "oats",
+      "oat bran",
+      "oat flour",
+      "soy flour",
+      "soy",
+      "soya",
+      "lentils",
+      "chickpeas",
+      "beans",
+      "peas",
+      "spinach",
+      "tomato",
+      "tomato paste"
+    ],
+    "e_codes": [
+      "E150c",
+      "E150d",
+      "E952"
+    ]
+  }
+}

@@ -1,0 +1,350 @@
+{
+  "lactose": {
+    "keywords": [
+      "latte",
+      "lattosio",
+      "siero di latte",
+      "siero",
+      "caseina",
+      "caseinato",
+      "caseinati",
+      "burro",
+      "panna",
+      "crema di latte",
+      "yogurt",
+      "formaggio",
+      "latticello",
+      "lattoglobulina",
+      "lattoalbumina",
+      "latte in polvere",
+      "latte scremato",
+      "latte intero",
+      "proteine del latte",
+      "derivati del latte",
+      "ricotta",
+      "mascarpone",
+      "mozzarella",
+      "parmigiano",
+      "grana",
+      "pecorino"
+    ],
+    "e_codes": [
+      "E270",
+      "E325",
+      "E326",
+      "E327",
+      "E472b",
+      "E480",
+      "E481",
+      "E482",
+      "E585",
+      "E966"
+    ]
+  },
+  "gluten": {
+    "keywords": [
+      "grano",
+      "frumento",
+      "orzo",
+      "segale",
+      "farro",
+      "kamut",
+      "spelta",
+      "glutine",
+      "malto",
+      "malto d'orzo",
+      "estratto di malto",
+      "farina di grano",
+      "farina di frumento",
+      "semola",
+      "semolino",
+      "crusca",
+      "amido di grano",
+      "amido di frumento",
+      "proteine del grano",
+      "triticale",
+      "seitan",
+      "bulgur",
+      "couscous",
+      "pangrattato"
+    ],
+    "e_codes": [
+      "E1404",
+      "E1410",
+      "E1412",
+      "E1413",
+      "E1414",
+      "E1420",
+      "E1422",
+      "E1440",
+      "E1442",
+      "E1450"
+    ]
+  },
+  "eggs": {
+    "keywords": [
+      "uovo",
+      "uova",
+      "tuorlo",
+      "albume",
+      "ovoprodotti",
+      "ovoprodotto",
+      "uovo in polvere",
+      "albume in polvere",
+      "tuorlo in polvere",
+      "lecitina di uovo",
+      "lisozima",
+      "ovoalbumina",
+      "ovomucina",
+      "maionese",
+      "meringa"
+    ],
+    "e_codes": [
+      "E1105"
+    ]
+  },
+  "peanuts": {
+    "keywords": [
+      "arachidi",
+      "arachide",
+      "burro di arachidi",
+      "olio di arachidi",
+      "olio di arachide",
+      "farina di arachidi",
+      "noccioline americane",
+      "nocciolina americana"
+    ],
+    "e_codes": []
+  },
+  "tree_nuts": {
+    "keywords": [
+      "nocciola",
+      "nocciole",
+      "mandorla",
+      "mandorle",
+      "noce",
+      "noci",
+      "pistacchio",
+      "pistacchi",
+      "anacardo",
+      "anacardi",
+      "noce di macadamia",
+      "macadamia",
+      "noce del brasile",
+      "noci del brasile",
+      "noce pecan",
+      "noci pecan",
+      "pinolo",
+      "pinoli",
+      "castagna",
+      "castagne",
+      "farina di nocciole",
+      "farina di mandorle",
+      "pasta di nocciole",
+      "pasta di mandorle",
+      "marzapane",
+      "pralinato"
+    ],
+    "e_codes": []
+  },
+  "fish": {
+    "keywords": [
+      "pesce",
+      "pesci",
+      "merluzzo",
+      "tonno",
+      "salmone",
+      "acciuga",
+      "acciughe",
+      "alice",
+      "alici",
+      "sardina",
+      "sardine",
+      "sgombro",
+      "orata",
+      "branzino",
+      "trota",
+      "sogliola",
+      "platessa",
+      "nasello",
+      "baccalà",
+      "stoccafisso",
+      "colatura di alici",
+      "garum",
+      "salsa di pesce",
+      "olio di pesce",
+      "gelatina di pesce",
+      "surimi"
+    ],
+    "e_codes": []
+  },
+  "crustaceans": {
+    "keywords": [
+      "crostacei",
+      "crostaceo",
+      "gambero",
+      "gamberi",
+      "gamberetto",
+      "gamberetti",
+      "scampo",
+      "scampi",
+      "aragosta",
+      "astice",
+      "granchio",
+      "granchi",
+      "gambero rosso",
+      "mazzancolla",
+      "mazzancolle"
+    ],
+    "e_codes": []
+  },
+  "mollusks": {
+    "keywords": [
+      "molluschi",
+      "mollusco",
+      "cozza",
+      "cozze",
+      "vongola",
+      "vongole",
+      "ostrica",
+      "ostriche",
+      "calamaro",
+      "calamari",
+      "seppia",
+      "seppie",
+      "polpo",
+      "polpi",
+      "totano",
+      "totani",
+      "capasanta",
+      "capesante",
+      "cannolicchio",
+      "cannolicchi",
+      "lumaca",
+      "lumache",
+      "chiocciola",
+      "chiocciole"
+    ],
+    "e_codes": []
+  },
+  "soy": {
+    "keywords": [
+      "soia",
+      "soya",
+      "semi di soia",
+      "farina di soia",
+      "olio di soia",
+      "lecitina di soia",
+      "proteine di soia",
+      "proteine della soia",
+      "latte di soia",
+      "salsa di soia",
+      "tofu",
+      "tempeh",
+      "miso",
+      "edamame",
+      "germogli di soia"
+    ],
+    "e_codes": [
+      "E322",
+      "E426"
+    ]
+  },
+  "celery": {
+    "keywords": [
+      "sedano",
+      "sedano rapa",
+      "sedano in foglie",
+      "sale di sedano",
+      "estratto di sedano",
+      "semi di sedano"
+    ],
+    "e_codes": []
+  },
+  "mustard": {
+    "keywords": [
+      "senape",
+      "mostarda",
+      "semi di senape",
+      "farina di senape",
+      "olio di senape",
+      "salsa di senape"
+    ],
+    "e_codes": []
+  },
+  "sesame": {
+    "keywords": [
+      "sesamo",
+      "semi di sesamo",
+      "olio di sesamo",
+      "pasta di sesamo",
+      "tahina",
+      "tahini",
+      "gomasio"
+    ],
+    "e_codes": []
+  },
+  "lupin": {
+    "keywords": [
+      "lupino",
+      "lupini",
+      "farina di lupino",
+      "farina di lupini",
+      "semi di lupino"
+    ],
+    "e_codes": []
+  },
+  "sulfites": {
+    "keywords": [
+      "solfiti",
+      "solfito",
+      "anidride solforosa",
+      "bisolfito",
+      "metabisolfito",
+      "diossido di zolfo"
+    ],
+    "e_codes": [
+      "E220",
+      "E221",
+      "E222",
+      "E223",
+      "E224",
+      "E226",
+      "E227",
+      "E228"
+    ]
+  },
+  "nickel": {
+    "keywords": [
+      "cacao",
+      "cioccolato",
+      "cioccolata",
+      "nocciola",
+      "nocciole",
+      "mandorla",
+      "mandorle",
+      "noce",
+      "noci",
+      "arachidi",
+      "arachide",
+      "liquirizia",
+      "avena",
+      "crusca di avena",
+      "farina di avena",
+      "farina di soia",
+      "soia",
+      "lenticchie",
+      "ceci",
+      "fagioli",
+      "piselli",
+      "spinaci",
+      "pomodoro",
+      "concentrato di pomodoro"
+    ],
+    "e_codes": [
+      "E150c",
+      "E150d",
+      "E952"
+    ]
+  }
+}

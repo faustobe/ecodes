@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Configurazione per dispositivi Android 7.0+ con certificati obsoleti -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <!-- Certificati di sistema -->
+            <certificates src="system" />
+            <!-- Certificati installati dall'utente -->
+            <certificates src="user" />
+        </trust-anchors>
+    </base-config>
+
+    <!-- Configurazione specifica per Open Food Facts -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">openfoodfacts.org</domain>
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </domain-config>
+</network-security-config>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header: Code + Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/codeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#c0c0c0"
+                android:text="E100" />
+
+            <TextView
+                android:id="@+id/nameText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:textSize="14sp"
+                android:textColor="#ccc000"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Curcumina" />
+
+        </LinearLayout>
+
+        <!-- Danger Bar -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <!-- Track (background) -->
+            <View
+                android:id="@+id/dangerBarTrack"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@drawable/danger_bar_track" />
+
+            <!-- Fill (foreground) -->
+            <View
+                android:id="@+id/dangerBarFill"
+                android:layout_width="0dp"
+                android:layout_height="8dp" />
+
+        </FrameLayout>
+
+        <!-- Classification description text -->
+        <TextView
+            android:id="@+id/classificationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textSize="12sp"
+            android:textColor="#c0c0c0"
+            android:text="Non tossico" />
+
+        <!-- Profile Alert Badge -->
+        <TextView
+            android:id="@+id/profileAlertBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:background="#FFEBEE"
+            android:textColor="#C62828"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:text="NON CONFORME AL TUO PROFILO" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
