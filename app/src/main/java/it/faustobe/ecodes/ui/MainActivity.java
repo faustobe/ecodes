@@ -451,15 +451,18 @@ public class MainActivity extends BaseActivity {
                 final float finalProteins = proteins;
                 final float finalSalt = salt;
 
-                // Conta solo gli additivi presenti nel database
+                // Conta solo gli additivi presenti nel database (con deduplicazione)
                 DatabaseHelper tempDb = new DatabaseHelper(MainActivity.this);
-                int validCount = 0;
+                java.util.Set<String> countedBaseCodes = new java.util.HashSet<>();
                 for (String code : finalMatches) {
-                    if (tempDb.getAdditiveByCode(code) != null) {
-                        validCount++;
+                    Additive additive = tempDb.getAdditiveByCode(code);
+                    if (additive != null) {
+                        // Normalizza al codice base per evitare duplicati (E965i -> E965)
+                        String baseCode = normalizeToBaseCode(additive.getCode());
+                        countedBaseCodes.add(baseCode);
                     }
                 }
-                final int displayCount = validCount;
+                final int displayCount = countedBaseCodes.size();
 
                 runOnUiThread(() -> {
                     progressBar.setVisibility(View.GONE);
@@ -647,5 +650,17 @@ public class MainActivity extends BaseActivity {
         if (barcodeScanner != null) {
             barcodeScanner.close();
         }
+    }
+
+    /**
+     * Normalizza un codice additivo al suo codice base rimuovendo suffissi variante.
+     * Es: E965i -> E965, E965ii -> E965, E150d -> E150
+     */
+    private String normalizeToBaseCode(String code) {
+        if (code == null || code.length() < 4) return code;
+        String upper = code.toUpperCase();
+        if (!upper.startsWith("E")) return upper;
+        String base = upper.replaceAll("(I{1,3}|IV|V|VI|[A-F])$", "");
+        return base.matches("E\\d{3,4}") ? base : upper;
     }
 }

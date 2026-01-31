@@ -4,7 +4,6 @@
       "latte",
       "lattosio",
       "siero di latte",
-      "siero",
       "caseina",
       "caseinato",
       "caseinati",
@@ -27,6 +26,28 @@
       "parmigiano",
       "grana",
       "pecorino"
+    ],
+    "exclusions": [
+      "senza latte",
+      "senza lattosio",
+      "privo di lattosio",
+      "privo di latte",
+      "no lattosio",
+      "zero lattosio",
+      "0% lattosio",
+      "delattosato",
+      "lactose free",
+      "milk free",
+      "dairy free",
+      "senza latticini",
+      "non contiene latte",
+      "non contiene lattosio",
+      "acido lattico",
+      "lattato",
+      "lattato di sodio",
+      "lattato di calcio",
+      "lattato di potassio",
+      "stearoil lattilato"
     ],
     "e_codes": [
       "E270",
@@ -68,6 +89,17 @@
       "couscous",
       "pangrattato"
     ],
+    "exclusions": [
+      "senza glutine",
+      "privo di glutine",
+      "no glutine",
+      "zero glutine",
+      "gluten free",
+      "non contiene glutine",
+      "glutammato",
+      "glutammato monosodico",
+      "glutammato di sodio"
+    ],
     "e_codes": [
       "E1404",
       "E1410",
@@ -98,6 +130,14 @@
       "ovomucina",
       "maionese",
       "meringa"
+    ],
+    "exclusions": [
+      "senza uova",
+      "senza uovo",
+      "privo di uova",
+      "no uova",
+      "egg free",
+      "non contiene uova"
     ],
     "e_codes": [
       "E1105"
@@ -244,6 +284,13 @@
       "miso",
       "edamame",
       "germogli di soia"
+    ],
+    "exclusions": [
+      "senza soia",
+      "privo di soia",
+      "no soia",
+      "soy free",
+      "non contiene soia"
     ],
     "e_codes": [
       "E322",

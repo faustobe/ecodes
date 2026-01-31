@@ -27,6 +27,25 @@
       "parmesan",
       "pecorino"
     ],
+    "exclusions": [
+      "lactose free",
+      "lactose-free",
+      "milk free",
+      "milk-free",
+      "dairy free",
+      "dairy-free",
+      "no lactose",
+      "without lactose",
+      "without milk",
+      "does not contain milk",
+      "does not contain lactose",
+      "lactic acid",
+      "lactate",
+      "sodium lactate",
+      "calcium lactate",
+      "potassium lactate",
+      "stearoyl lactylate"
+    ],
     "e_codes": [
       "E270",
       "E325",
@@ -65,6 +84,15 @@
       "einkorn",
       "durum wheat"
     ],
+    "exclusions": [
+      "gluten free",
+      "gluten-free",
+      "no gluten",
+      "without gluten",
+      "does not contain gluten",
+      "glutamate",
+      "monosodium glutamate"
+    ],
     "e_codes": [
       "E1404",
       "E1410",
@@ -97,6 +125,15 @@
       "meringue",
       "whole egg",
       "pasteurized egg"
+    ],
+    "exclusions": [
+      "egg free",
+      "egg-free",
+      "no eggs",
+      "no egg",
+      "without eggs",
+      "does not contain eggs",
+      "vegan"
     ],
     "e_codes": [
       "E1105"
@@ -233,6 +270,15 @@
       "miso",
       "edamame",
       "soy sprouts"
+    ],
+    "exclusions": [
+      "soy free",
+      "soy-free",
+      "soya free",
+      "soya-free",
+      "no soy",
+      "without soy",
+      "does not contain soy"
     ],
     "e_codes": [
       "E322",

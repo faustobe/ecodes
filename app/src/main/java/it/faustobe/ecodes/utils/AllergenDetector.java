@@ -12,6 +12,8 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
 
 public class AllergenDetector {
     private static final String PREFS_NAME_PROFILE = "user_profile";
@@ -141,18 +143,38 @@ public class AllergenDetector {
 
             JSONObject allergen = allergensData.getJSONObject(allergenType);
 
-            // Check keywords
-            if (allergen.has("keywords")) {
+            // Load exclusion patterns first
+            Set<String> exclusions = new HashSet<>();
+            if (allergen.has("exclusions")) {
+                JSONArray exclusionsArray = allergen.getJSONArray("exclusions");
+                for (int i = 0; i < exclusionsArray.length(); i++) {
+                    exclusions.add(exclusionsArray.getString(i).toLowerCase());
+                }
+            }
+
+            // Check if any exclusion pattern is present in ingredients
+            boolean hasExclusion = false;
+            for (String exclusion : exclusions) {
+                if (ingredientsLower.contains(exclusion)) {
+                    hasExclusion = true;
+                    break;
+                }
+            }
+
+            // If exclusion found, skip keyword detection for this allergen
+            // (E-codes are still checked as they are more specific)
+            if (!hasExclusion && allergen.has("keywords")) {
                 JSONArray keywords = allergen.getJSONArray("keywords");
                 for (int i = 0; i < keywords.length(); i++) {
                     String keyword = keywords.getString(i).toLowerCase();
-                    if (ingredientsLower.contains(keyword)) {
+                    // Use word boundary matching to avoid false positives
+                    if (matchesAsWholeWord(ingredientsLower, keyword)) {
                         foundKeywords.add(keyword);
                     }
                 }
             }
 
-            // Check E-codes
+            // Check E-codes (always check, even with exclusions, as E-codes are specific)
             if (allergen.has("e_codes") && eCodes != null) {
                 JSONArray allergenECodes = allergen.getJSONArray("e_codes");
                 for (int i = 0; i < allergenECodes.length(); i++) {
@@ -167,6 +189,24 @@ public class AllergenDetector {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    /**
+     * Check if a keyword appears as a whole word in the text.
+     * This prevents false positives like "latte" in "scarlatto".
+     */
+    private boolean matchesAsWholeWord(String text, String keyword) {
+        // For multi-word keywords (e.g., "siero di latte"), use simple contains
+        if (keyword.contains(" ")) {
+            return text.contains(keyword);
+        }
+
+        // For single-word keywords, use word boundary matching
+        // Word boundaries: start/end of string, spaces, punctuation, parentheses, etc.
+        String regex = "(?<![a-zàèéìòùáéíóú])" + Pattern.quote(keyword) + "(?![a-zàèéìòùáéíóú])";
+        Pattern pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
+        Matcher matcher = pattern.matcher(text);
+        return matcher.find();
     }
 
     public static class AllergenMatch {

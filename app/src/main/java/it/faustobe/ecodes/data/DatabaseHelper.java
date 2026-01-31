@@ -400,11 +400,49 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public Additive getAdditiveByCode(String code) {
         SQLiteDatabase db = this.getReadableDatabase();
+        String currentLang = getCurrentLanguage();
+
+        // Prima cerca il codice esatto
+        Additive additive = findAdditiveByExactCode(db, code, currentLang);
+
+        // Se non trovato e il codice ha un suffisso variante (i, ii, iii, a, b, c, d),
+        // prova a cercare il codice padre
+        if (additive == null && code != null) {
+            String parentCode = getParentCode(code);
+            if (parentCode != null && !parentCode.equals(code)) {
+                additive = findAdditiveByExactCode(db, parentCode, currentLang);
+            }
+        }
+
+        return additive;
+    }
+
+    /**
+     * Estrae il codice padre rimuovendo il suffisso variante (i, ii, iii, iv, a, b, c, d, e, f)
+     * Es: E965ii -> E965, E150d -> E150, E553b -> E553
+     */
+    private String getParentCode(String code) {
+        if (code == null || code.length() < 4) return null;
+
+        // Pattern: E + numeri + eventuale suffisso (i, ii, iii, iv, v, vi, a, b, c, d, e, f)
+        String upper = code.toUpperCase();
+        if (!upper.startsWith("E")) return null;
+
+        // Rimuovi suffissi romani (i, ii, iii, iv, v, vi) o lettere (a, b, c, d, e, f)
+        String parent = upper.replaceAll("(I{1,3}|IV|V|VI|[A-F])$", "");
+
+        // Verifica che rimanga un codice valido (E + almeno 3 cifre)
+        if (parent.matches("E\\d{3,4}")) {
+            return parent;
+        }
+        return null;
+    }
+
+    private Additive findAdditiveByExactCode(SQLiteDatabase db, String code, String currentLang) {
         Cursor cursor = db.rawQuery(
             "SELECT * FROM additives WHERE code = ? COLLATE NOCASE",
             new String[]{code}
         );
-        String currentLang = getCurrentLanguage();
 
         Additive additive = null;
         if (cursor.moveToFirst()) {

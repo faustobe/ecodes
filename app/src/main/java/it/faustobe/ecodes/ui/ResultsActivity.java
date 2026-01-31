@@ -6,7 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.ScrollView;
+import androidx.core.widget.NestedScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,7 +21,9 @@ import it.faustobe.ecodes.utils.AllergenDetector;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class ResultsActivity extends BaseActivity {
     private RecyclerView certainRecyclerView;
@@ -33,7 +35,7 @@ public class ResultsActivity extends BaseActivity {
     private TextView ambiguousTitle;
     private LinearLayout certainSection;
     private LinearLayout ambiguousSection;
-    private ScrollView resultsScrollView;
+    private NestedScrollView resultsScrollView;
     private MaterialButton btnManualSearch;
     private MaterialButton btnShowWarning;
     private View warningCard;
@@ -329,7 +331,7 @@ public class ResultsActivity extends BaseActivity {
             ingredientsText.setText(formatIngredients(fullIngredients));
         }
 
-        // Salva tutti i codici E trovati
+        // Salva tutti i codici E trovati (per allergen detection)
         currentECodes = new ArrayList<>();
         if (certainCodes != null) currentECodes.addAll(certainCodes);
         if (ambiguousCodes != null) currentECodes.addAll(ambiguousCodes);
@@ -341,16 +343,8 @@ public class ResultsActivity extends BaseActivity {
         // Inizializza lista per condivisione
         allAdditives = new ArrayList<>();
 
-        // Salva automaticamente in cronologia SOLO se è una nuova scansione
-        // (non quando viene riaperto dalla cronologia/preferiti)
-        // Salva anche prodotti senza additivi (lista vuota)
-        boolean fromHistory = getIntent().getBooleanExtra("fromHistory", false);
-        if (!fromHistory && currentBarcode != null && currentProductName != null) {
-            dbHelper.addToHistory(currentBarcode, currentProductName, currentECodes, currentIngredients,
-                    currentNutriscore, currentNovaGroup, currentManufacturingPlaces, currentOrigins,
-                    currentEcoscore, currentBrands, currentQuantity, currentLabels, currentAllergens, currentTraces,
-                    currentEnergyKcal, currentFat, currentSaturatedFat, currentCarbs, currentSugars, currentFiber, currentProteins, currentSalt);
-        }
+        // Il salvataggio in cronologia viene fatto dopo il processing degli additivi
+        // per salvare solo i codici E validi (presenti nel database)
 
         // Setup FAB preferiti
         updateFavoriteIcon();
@@ -373,14 +367,22 @@ public class ResultsActivity extends BaseActivity {
 
         int totalCount = 0;
 
+        // Set per evitare duplicati (es: E965 e E965i sono lo stesso additivo base)
+        Set<String> addedCodes = new HashSet<>();
+
         // Gestione match certi
         if (certainCodes != null && !certainCodes.isEmpty()) {
             List<Additive> certainAdditives = new ArrayList<>();
             for (String code : certainCodes) {
                 Additive additive = dbHelper.getAdditiveByCode(code);
                 if (additive != null) {
-                    certainAdditives.add(additive);
-                    allAdditives.add(additive);
+                    // Normalizza al codice base per deduplicazione (E965i -> E965)
+                    String baseCode = normalizeToBaseCode(additive.getCode());
+                    if (!addedCodes.contains(baseCode)) {
+                        addedCodes.add(baseCode);
+                        certainAdditives.add(additive);
+                        allAdditives.add(additive);
+                    }
                 }
             }
 
@@ -392,23 +394,6 @@ public class ResultsActivity extends BaseActivity {
                 certainRecyclerView.setNestedScrollingEnabled(false);
                 AdditiveAdapter certainAdapter = new AdditiveAdapter(certainAdditives, this::openDetail, profileManager);
                 certainRecyclerView.setAdapter(certainAdapter);
-                // Fix: Calculate and set correct height for RecyclerView inside ScrollView
-                certainRecyclerView.post(() -> {
-                    int totalHeight = 0;
-                    for (int i = 0; i < certainRecyclerView.getChildCount(); i++) {
-                        View child = certainRecyclerView.getChildAt(i);
-                        totalHeight += child.getHeight();
-                        RecyclerView.LayoutParams params = (RecyclerView.LayoutParams) child.getLayoutParams();
-                        totalHeight += params.topMargin + params.bottomMargin;
-                    }
-                    totalHeight += certainRecyclerView.getPaddingTop() + certainRecyclerView.getPaddingBottom();
-
-                    if (totalHeight > certainRecyclerView.getHeight()) {
-                        android.view.ViewGroup.LayoutParams layoutParams = certainRecyclerView.getLayoutParams();
-                        layoutParams.height = totalHeight;
-                        certainRecyclerView.setLayoutParams(layoutParams);
-                    }
-                });
                 totalCount += certainAdditives.size();
             }
         }
@@ -419,8 +404,12 @@ public class ResultsActivity extends BaseActivity {
             for (String code : ambiguousCodes) {
                 Additive additive = dbHelper.getAdditiveByCode(code);
                 if (additive != null) {
-                    ambiguousAdditives.add(additive);
-                    allAdditives.add(additive); // Aggiungi per condivisione
+                    String baseCode = normalizeToBaseCode(additive.getCode());
+                    if (!addedCodes.contains(baseCode)) {
+                        addedCodes.add(baseCode);
+                        ambiguousAdditives.add(additive);
+                        allAdditives.add(additive);
+                    }
                 }
             }
 
@@ -448,23 +437,6 @@ public class ResultsActivity extends BaseActivity {
                 ambiguousRecyclerView.setNestedScrollingEnabled(false);
                 AdditiveAdapter ambiguousAdapter = new AdditiveAdapter(ambiguousAdditives, this::openDetail, profileManager);
                 ambiguousRecyclerView.setAdapter(ambiguousAdapter);
-                // Fix: Calculate and set correct height for RecyclerView inside ScrollView
-                ambiguousRecyclerView.post(() -> {
-                    int totalHeight = 0;
-                    for (int i = 0; i < ambiguousRecyclerView.getChildCount(); i++) {
-                        View child = ambiguousRecyclerView.getChildAt(i);
-                        totalHeight += child.getHeight();
-                        RecyclerView.LayoutParams params = (RecyclerView.LayoutParams) child.getLayoutParams();
-                        totalHeight += params.topMargin + params.bottomMargin;
-                    }
-                    totalHeight += ambiguousRecyclerView.getPaddingTop() + ambiguousRecyclerView.getPaddingBottom();
-
-                    if (totalHeight > ambiguousRecyclerView.getHeight()) {
-                        android.view.ViewGroup.LayoutParams layoutParams = ambiguousRecyclerView.getLayoutParams();
-                        layoutParams.height = totalHeight;
-                        ambiguousRecyclerView.setLayoutParams(layoutParams);
-                    }
-                });
                 totalCount += ambiguousAdditives.size();
             }
         }
@@ -477,6 +449,23 @@ public class ResultsActivity extends BaseActivity {
             missingCodesCard.setVisibility(View.VISIBLE);
         } else {
             missingCodesCard.setVisibility(View.GONE);
+        }
+
+        // Salva in cronologia SOLO i codici E validi (presenti nel database)
+        // Questo assicura che il conteggio nella cronologia corrisponda a quello mostrato
+        boolean fromHistory = getIntent().getBooleanExtra("fromHistory", false);
+        if (!fromHistory && currentBarcode != null && currentProductName != null) {
+            // Costruisci lista di soli codici E validi da allAdditives
+            List<String> validECodes = new ArrayList<>();
+            for (Additive additive : allAdditives) {
+                validECodes.add(additive.getCode());
+            }
+            dbHelper.addToHistory(currentBarcode, currentProductName, validECodes, currentIngredients,
+                    currentNutriscore, currentNovaGroup, currentManufacturingPlaces, currentOrigins,
+                    currentEcoscore, currentBrands, currentQuantity, currentLabels, currentAllergens, currentTraces,
+                    currentEnergyKcal, currentFat, currentSaturatedFat, currentCarbs, currentSugars, currentFiber, currentProteins, currentSalt);
+            // Aggiorna currentECodes per coerenza
+            currentECodes = validECodes;
         }
 
         // Mostra contatore additivi nell'header
@@ -1005,5 +994,25 @@ public class ResultsActivity extends BaseActivity {
         nutritionFiber.setText(String.format("%.1f %s", currentFiber, getString(R.string.nutrition_g)));
         nutritionProteins.setText(String.format("%.1f %s", currentProteins, getString(R.string.nutrition_g)));
         nutritionSalt.setText(String.format("%.2f %s", currentSalt, getString(R.string.nutrition_g)));
+    }
+
+    /**
+     * Normalizza un codice additivo al suo codice base rimuovendo suffissi variante.
+     * Es: E965i -> E965, E965ii -> E965, E150d -> E150, E553b -> E553
+     */
+    private String normalizeToBaseCode(String code) {
+        if (code == null || code.length() < 4) return code;
+
+        String upper = code.toUpperCase();
+        if (!upper.startsWith("E")) return upper;
+
+        // Rimuovi suffissi romani (i, ii, iii, iv, v, vi) o lettere (a, b, c, d, e, f)
+        String base = upper.replaceAll("(I{1,3}|IV|V|VI|[A-F])$", "");
+
+        // Verifica che rimanga un codice valido
+        if (base.matches("E\\d{3,4}")) {
+            return base;
+        }
+        return upper;
     }
 }
