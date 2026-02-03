@@ -1,114 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/splashRootLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#4CAF50"
-    android:gravity="center"
-    android:padding="32dp">
+    android:fillViewport="true">
 
-    <!-- App Icon/Logo -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="🔍"
-        android:textSize="80sp"
-        android:layout_marginBottom="24dp" />
-
-    <!-- App Name -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="E-Codes"
-        android:textSize="48sp"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"
-        android:layout_marginBottom="8dp" />
-
-    <!-- Subtitle -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/splash_subtitle"
-        android:textSize="16sp"
-        android:textColor="#E8F5E9"
-        android:alpha="0.9"
-        android:layout_marginBottom="48dp" />
-
-    <!-- Welcome Card -->
-    <androidx.cardview.widget.CardView
+    <LinearLayout
+        android:id="@+id/splashRootLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="32dp"
-        app:cardBackgroundColor="#FFFFFF"
-        app:cardElevation="4dp"
-        app:cardCornerRadius="12dp">
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp">
 
-        <LinearLayout
+        <!-- App Icon/Logo -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔍"
+            android:textSize="80sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- App Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-Codes"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/splash_subtitle"
+            android:textSize="16sp"
+            android:textColor="#E8F5E9"
+            android:alpha="0.9"
+            android:layout_marginBottom="48dp" />
+
+        <!-- Welcome Card -->
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="24dp">
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="32dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="12dp">
 
-            <TextView
-                android:id="@+id/splashWelcomeText"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/splash_welcome"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                android:textColor="#212121"
-                android:gravity="center"
-                android:layout_marginBottom="16dp" />
+                android:orientation="vertical"
+                android:padding="24dp">
 
-            <TextView
-                android:id="@+id/splashDescriptionText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/splash_description"
-                android:textSize="15sp"
-                android:textColor="#424242"
-                android:gravity="center"
-                android:lineSpacingExtra="4dp"
-                android:layout_marginBottom="20dp" />
+                <TextView
+                    android:id="@+id/splashWelcomeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/splash_welcome"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:gravity="center"
+                    android:layout_marginBottom="16dp" />
 
-            <TextView
-                android:id="@+id/splashFeaturesText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/splash_features"
-                android:textSize="14sp"
-                android:textColor="#424242"
-                android:lineSpacingExtra="6dp"
-                android:layout_marginBottom="20dp" />
+                <TextView
+                    android:id="@+id/splashDescriptionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/splash_description"
+                    android:textSize="15sp"
+                    android:textColor="#424242"
+                    android:gravity="center"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="20dp" />
 
-            <TextView
-                android:id="@+id/splashPrivacyText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/splash_privacy"
-                android:textSize="13sp"
-                android:textColor="#1976D2"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:lineSpacingExtra="4dp" />
+                <TextView
+                    android:id="@+id/splashFeaturesText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/splash_features"
+                    android:textSize="14sp"
+                    android:textColor="#424242"
+                    android:lineSpacingExtra="6dp"
+                    android:layout_marginBottom="20dp" />
 
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/splashPrivacyText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/splash_privacy"
+                    android:textSize="13sp"
+                    android:textColor="#1976D2"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:lineSpacingExtra="4dp" />
 
-    </androidx.cardview.widget.CardView>
+            </LinearLayout>
 
-    <!-- Version -->
-    <TextView
-        android:id="@+id/splashVersionText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="v1.0.0"
-        android:textSize="12sp"
-        android:textColor="#E8F5E9"
-        android:alpha="0.7" />
+        </androidx.cardview.widget.CardView>
 
-</LinearLayout>
+        <!-- Version -->
+        <TextView
+            android:id="@+id/splashVersionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="v1.0.0"
+            android:textSize="12sp"
+            android:textColor="#E8F5E9"
+            android:alpha="0.7" />
+
+    </LinearLayout>
+
+</ScrollView>

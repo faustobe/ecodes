@@ -16,4 +16,9 @@
         android:title="@string/action_favorites"
         android:icon="@android:drawable/star_big_on"
         app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_howto"
+        android:title="@string/action_howto"
+        android:icon="@android:drawable/ic_menu_help"
+        app:showAsAction="never" />
 </menu>

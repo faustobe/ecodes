@@ -140,21 +140,29 @@ public class ProfileActivity extends BaseActivity {
     }
 
     private void addCustomAllergenView(CustomAllergenManager.CustomAllergen allergen) {
-        // Create horizontal layout for switch + delete button
-        LinearLayout row = new LinearLayout(this);
-        row.setOrientation(LinearLayout.HORIZONTAL);
-        row.setLayoutParams(new LinearLayout.LayoutParams(
+        SwitchMaterial switchView = new SwitchMaterial(this);
+        switchView.setLayoutParams(new LinearLayout.LayoutParams(
             LinearLayout.LayoutParams.MATCH_PARENT,
             LinearLayout.LayoutParams.WRAP_CONTENT));
 
-        // Create switch
-        SwitchMaterial switchView = new SwitchMaterial(this);
-        LinearLayout.LayoutParams switchParams = new LinearLayout.LayoutParams(
-            0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f);
-        switchView.setLayoutParams(switchParams);
-        switchView.setText(allergen.name + " (" + String.join(", ", allergen.keywords) + ")");
+        // Costruisci il testo: nome + eventuali sinonimi (senza ripetere il nome)
+        String displayText = allergen.name;
+        if (allergen.keywords.size() > 1) {
+            // Filtra le keywords rimuovendo quella uguale al nome
+            java.util.List<String> synonyms = new java.util.ArrayList<>();
+            for (String kw : allergen.keywords) {
+                if (!kw.equalsIgnoreCase(allergen.name)) {
+                    synonyms.add(kw);
+                }
+            }
+            if (!synonyms.isEmpty()) {
+                displayText += " (" + String.join(", ", synonyms) + ")";
+            }
+        }
+
+        switchView.setText(displayText);
         switchView.setTextSize(14);
-        switchView.setPadding(24, 24, 8, 24);
+        switchView.setPadding(24, 24, 24, 24);
         switchView.setChecked(allergen.enabled);
 
         switchView.setOnCheckedChangeListener((buttonView, isChecked) -> {
@@ -162,32 +170,7 @@ public class ProfileActivity extends BaseActivity {
             showSavedToast();
         });
 
-        // Create delete button
-        android.widget.ImageButton deleteBtn = new android.widget.ImageButton(this);
-        deleteBtn.setLayoutParams(new LinearLayout.LayoutParams(
-            LinearLayout.LayoutParams.WRAP_CONTENT,
-            LinearLayout.LayoutParams.WRAP_CONTENT));
-        deleteBtn.setImageResource(android.R.drawable.ic_delete);
-        deleteBtn.setBackgroundColor(android.graphics.Color.TRANSPARENT);
-        deleteBtn.setContentDescription(getString(R.string.action_delete));
-        deleteBtn.setPadding(16, 16, 16, 16);
-
-        deleteBtn.setOnClickListener(v -> {
-            new AlertDialog.Builder(this)
-                .setTitle(R.string.custom_allergen_delete_title)
-                .setMessage(getString(R.string.custom_allergen_delete_message, allergen.name))
-                .setPositiveButton(R.string.action_delete, (dialog, which) -> {
-                    customAllergenManager.removeCustomAllergen(allergen.id);
-                    loadCustomAllergens();
-                    showSavedToast();
-                })
-                .setNegativeButton(R.string.action_cancel, null)
-                .show();
-        });
-
-        row.addView(switchView);
-        row.addView(deleteBtn);
-        customAllergensContainer.addView(row);
+        customAllergensContainer.addView(switchView);
     }
 
     private void setupListeners() {
@@ -252,32 +235,42 @@ public class ProfileActivity extends BaseActivity {
     }
 
     private void showAddCustomAllergenDialog() {
-        View dialogView = LayoutInflater.from(this).inflate(R.layout.dialog_add_custom_allergen, null);
-        EditText editName = dialogView.findViewById(R.id.editCustomAllergenName);
-        EditText editKeywords = dialogView.findViewById(R.id.editCustomAllergenKeywords);
+        final View dialogView = LayoutInflater.from(this).inflate(R.layout.dialog_add_custom_allergen, null);
 
-        new AlertDialog.Builder(this)
+        AlertDialog dialog = new AlertDialog.Builder(this)
             .setTitle(R.string.custom_allergen_dialog_title)
             .setView(dialogView)
-            .setPositiveButton(R.string.action_add, (dialog, which) -> {
-                String name = editName.getText().toString().trim();
-                String keywords = editKeywords.getText().toString().trim();
+            .setPositiveButton(R.string.action_add, null)
+            .setNegativeButton(R.string.action_cancel, null)
+            .create();
 
-                if (name.isEmpty()) {
-                    Toast.makeText(this, R.string.custom_allergen_name_required, Toast.LENGTH_SHORT).show();
+        dialog.setOnShowListener(dialogInterface -> {
+            dialog.getButton(AlertDialog.BUTTON_POSITIVE).setOnClickListener(v -> {
+                com.google.android.material.textfield.TextInputEditText editAllergen =
+                    dialogView.findViewById(R.id.editCustomAllergen);
+
+                String input = "";
+                if (editAllergen != null && editAllergen.getText() != null) {
+                    input = editAllergen.getText().toString().trim();
+                }
+
+                if (input.isEmpty()) {
+                    Toast.makeText(this, R.string.custom_allergen_required, Toast.LENGTH_SHORT).show();
                     return;
                 }
-                if (keywords.isEmpty()) {
-                    Toast.makeText(this, R.string.custom_allergen_keywords_required, Toast.LENGTH_SHORT).show();
-                    return;
-                }
+
+                // Usa la prima parola come nome, tutto l'input come keywords
+                String name = input.contains(",") ? input.split(",")[0].trim() : input;
+                String keywords = input;
 
                 customAllergenManager.addCustomAllergen(name, keywords);
                 loadCustomAllergens();
                 showSavedToast();
-            })
-            .setNegativeButton(R.string.action_cancel, null)
-            .show();
+                dialog.dismiss();
+            });
+        });
+
+        dialog.show();
     }
 
     private void showSavedToast() {

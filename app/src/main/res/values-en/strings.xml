@@ -83,8 +83,6 @@
     <string name="results_warning_title">⚠ Important Note</string>
     <string name="results_warning_text">The system automatically detects additives from the Open Food Facts database.\n\n• Additives written in full (e.g: "locust bean gum") might not be detected if not tagged as E-code\n• Ingredient list might be in a foreign language\n\nAlways check the complete label and use manual search if necessary.</string>
     <string name="results_manual_search">Manual search</string>
-    <string name="results_show_ingredients">📋 Show all ingredients</string>
-    <string name="results_hide_ingredients">📋 Hide ingredients</string>
     <string name="results_profile_alert">⚠️ Profile Alert</string>
     <string name="results_no_results">No additives found in image</string>
     <string name="results_certain_title">✓ Detected Additives</string>
@@ -194,12 +192,11 @@
 
     <!-- Custom allergens -->
     <string name="profile_custom_allergens_title">Custom intolerances</string>
-    <string name="profile_add_custom_allergen">+ Add intolerance</string>
+    <string name="profile_add_custom_allergen">Add intolerance</string>
     <string name="custom_allergen_dialog_title">New intolerance</string>
-    <string name="custom_allergen_name_hint">Name (e.g.: Histamine)</string>
-    <string name="custom_allergen_keywords_hint">Keywords separated by comma\n(e.g.: histamine, tomato, strawberry)</string>
-    <string name="custom_allergen_name_required">Enter a name</string>
-    <string name="custom_allergen_keywords_required">Enter at least one keyword</string>
+    <string name="custom_allergen_hint">Ingredient to avoid</string>
+    <string name="custom_allergen_hint_example">You can add synonyms separated by comma\ne.g.: tomato, pomodoro, tomato sauce</string>
+    <string name="custom_allergen_required">Enter at least one ingredient</string>
     <string name="custom_allergen_added">Intolerance added</string>
     <string name="custom_allergen_removed">Intolerance removed</string>
     <string name="custom_allergen_delete_title">Delete intolerance</string>
@@ -269,11 +266,11 @@
     <string name="howto_ecoscore_e">Very high environmental impact - Strong environmental footprint</string>
     <string name="howto_ecoscore_note">The calculation considers: CO₂ emissions, water consumption, land use, packaging, transport, and biodiversity. Bonuses for organic certifications, fair trade, and recyclable packaging.</string>
     <string name="howto_profile_title">👤 Personal Profile</string>
-    <string name="howto_profile_text">Configure your profile with:\n\n• Dietary preferences (vegan, vegetarian, halal)\n• Caution level on additives\n• Allergies and intolerances (14 EU allergens + nickel)\n\nYou\'ll receive automatic alerts when a product contains additives incompatible with your profile.</string>
+    <string name="howto_profile_text">Configure your profile with:\n\n• Dietary preferences (vegan, vegetarian, halal)\n• Caution level on additives\n• Allergies and intolerances (14 EU allergens + nickel)\n• Custom intolerances (add specific ingredients to avoid)\n\nYou\'ll receive automatic alerts when a product contains additives or ingredients incompatible with your profile.</string>
     <string name="howto_features_title">⭐ Other Features</string>
     <string name="howto_features_text">• Favorites: Save products you scan most often\n• History: Check your previous scans\n• Sharing: Share results with friends and family\n• Offline: Manual search works even without internet</string>
     <string name="howto_data_title">📚 Data Sources</string>
-    <string name="howto_data_text">• Local database: +500 additives with detailed descriptions\n• Open Food Facts: Collaborative food product database\n• EFSA: European Food Safety Authority\n\nNote: Automatic detection depends on data quality on Open Food Facts. For certain results, always use manual search.</string>
+    <string name="howto_data_text">• Local database: +400 additives with detailed descriptions\n• Open Food Facts: Collaborative food product database\n• EFSA: European Food Safety Authority\n\n⚠️ Note: Automatic detection depends on data quality on Open Food Facts. Some products may have missing or incomplete ingredients in the database. For certain results, always use manual search.\n\n📧 Reports: If you find products with missing or incorrect data, write to us at faustobe.azs@gmail.com</string>
     <string name="howto_tips_title">💡 Tips</string>
     <string name="howto_tips_text">• Configure your profile for personalized alerts\n• Use sharing to send results\n• Check full ingredients when available\n• Tap an additive to see all details\n• Use manual search to explore the database</string>
 
@@ -301,7 +298,7 @@
     <string name="changelog_v1_title">Version 1.0 - Initial Release</string>
     <string name="changelog_v1_date">January 2026</string>
     <string name="changelog_v1_subtitle">🎊 First public release</string>
-    <string name="changelog_v1_features">• Barcode scanner with Open Food Facts integration\n• Manual search in local database (+500 additives)\n• Additive classification (A-F) with color codes\n• Personal profile with dietary preferences\n• Automatic alerts for vegans, vegetarians, halal\n• Customizable caution levels\n• Sulfite alerts\n• Scan history\n• Favorites\n• Result sharing\n• Complete user guide\n• 100% Privacy: data only on device</string>
+    <string name="changelog_v1_features">• Barcode scanner with Open Food Facts integration\n• Manual search in local database (+400 additives)\n• Additive classification (A-F) with color codes\n• Personal profile with dietary preferences\n• Automatic alerts for vegans, vegetarians, halal\n• Customizable caution levels\n• Sulfite alerts\n• Scan history\n• Favorites\n• Result sharing\n• Complete user guide\n• 100% Privacy: data only on device</string>
     <string name="changelog_footer">Thank you for choosing E-Codes! 💚</string>
 
     <!-- Toast Messages -->

@@ -193,12 +193,11 @@
 
     <!-- Custom allergens -->
     <string name="profile_custom_allergens_title">Intolleranze personalizzate</string>
-    <string name="profile_add_custom_allergen">+ Aggiungi intolleranza</string>
+    <string name="profile_add_custom_allergen">Aggiungi intolleranza</string>
     <string name="custom_allergen_dialog_title">Nuova intolleranza</string>
-    <string name="custom_allergen_name_hint">Nome (es: Istamina)</string>
-    <string name="custom_allergen_keywords_hint">Parole chiave separate da virgola\n(es: istamina, pomodoro, fragola)</string>
-    <string name="custom_allergen_name_required">Inserisci un nome</string>
-    <string name="custom_allergen_keywords_required">Inserisci almeno una parola chiave</string>
+    <string name="custom_allergen_hint">Ingrediente da evitare</string>
+    <string name="custom_allergen_hint_example">Puoi aggiungere sinonimi separati da virgola\nes: pomodoro, tomato, salsa di pomodoro</string>
+    <string name="custom_allergen_required">Inserisci almeno un ingrediente</string>
     <string name="custom_allergen_added">Intolleranza aggiunta</string>
     <string name="custom_allergen_removed">Intolleranza rimossa</string>
     <string name="custom_allergen_delete_title">Elimina intolleranza</string>
@@ -268,11 +267,11 @@
     <string name="howto_ecoscore_e">Impatto ambientale molto elevato - Forte impatto sull\'ambiente</string>
     <string name="howto_ecoscore_note">Il calcolo considera: emissioni CO₂, consumo di acqua, uso del suolo, imballaggio, trasporto e biodiversità. Bonus per certificazioni bio, commercio equo e imballaggi riciclabili.</string>
     <string name="howto_profile_title">👤 Profilo Personale</string>
-    <string name="howto_profile_text">Configura il tuo profilo con:\n\n• Preferenze dietetiche (vegano, vegetariano, halal)\n• Livello di cautela sugli additivi\n• Allergie e intolleranze (14 allergeni UE + nichel)\n\nRiceverai alert automatici quando un prodotto contiene additivi non compatibili con il tuo profilo.</string>
+    <string name="howto_profile_text">Configura il tuo profilo con:\n\n• Preferenze dietetiche (vegano, vegetariano, halal)\n• Livello di cautela sugli additivi\n• Allergie e intolleranze (14 allergeni UE + nichel)\n• Intolleranze personalizzate (aggiungi ingredienti specifici da evitare)\n\nRiceverai alert automatici quando un prodotto contiene additivi o ingredienti non compatibili con il tuo profilo.</string>
     <string name="howto_features_title">⭐ Altre Funzionalità</string>
     <string name="howto_features_text">• Preferiti: Salva i prodotti che scansioni più spesso\n• Cronologia: Consulta le tue scansioni precedenti\n• Condivisione: Condividi i risultati con amici e familiari\n• Offline: La ricerca manuale funziona anche senza internet</string>
     <string name="howto_data_title">📚 Fonti Dati</string>
-    <string name="howto_data_text">• Database locale: +500 additivi con descrizioni dettagliate\n• Open Food Facts: Database collaborativo di prodotti alimentari\n• EFSA: Autorità Europea per la Sicurezza Alimentare\n\nNota: Il rilevamento automatico dipende dalla qualità dei dati su Open Food Facts. Per risultati certi, usa sempre la ricerca manuale.</string>
+    <string name="howto_data_text">• Database locale: +400 additivi con descrizioni dettagliate\n• Open Food Facts: Database collaborativo di prodotti alimentari\n• EFSA: Autorità Europea per la Sicurezza Alimentare\n\n⚠️ Nota: Il rilevamento automatico dipende dalla qualità dei dati su Open Food Facts. Alcuni prodotti potrebbero avere ingredienti mancanti o incompleti nel database. Per risultati certi, usa sempre la ricerca manuale.\n\n📧 Segnalazioni: Se trovi prodotti con dati mancanti o errati, scrivici a faustobe.azs@gmail.com</string>
     <string name="howto_tips_title">💡 Suggerimenti</string>
     <string name="howto_tips_text">• Configura il profilo per alert personalizzati\n• Usa la condivisione per inviare i risultati\n• Consulta gli ingredienti completi quando disponibili\n• Tocca un additivo per vedere tutti i dettagli\n• Usa la ricerca manuale per esplorare il database</string>
 
@@ -301,7 +300,7 @@
     <string name="changelog_v1_title">Versione 1.0 - Release Iniziale</string>
     <string name="changelog_v1_date">Gennaio 2026</string>
     <string name="changelog_v1_subtitle">🎊 Prima release pubblica</string>
-    <string name="changelog_v1_features">• Scanner barcode con integrazione Open Food Facts\n• Ricerca manuale nel database locale (+500 additivi)\n• Classificazione additivi (A-F) con codici colore\n• Profilo personale con preferenze dietetiche\n• Alert automatici per vegani, vegetariani, halal\n• Livelli di cautela personalizzabili\n• Alert intolleranze\n• Cronologia scansioni\n• Preferiti\n• Condivisione risultati\n• Guida completa all\'uso\n• 100% Privacy: dati solo sul dispositivo</string>
+    <string name="changelog_v1_features">• Scanner barcode con integrazione Open Food Facts\n• Ricerca manuale nel database locale (+400 additivi)\n• Classificazione additivi (A-F) con codici colore\n• Profilo personale con preferenze dietetiche\n• Alert automatici per vegani, vegetariani, halal\n• Livelli di cautela personalizzabili\n• Alert intolleranze\n• Cronologia scansioni\n• Preferiti\n• Condivisione risultati\n• Guida completa all\'uso\n• 100% Privacy: dati solo sul dispositivo</string>
     <string name="changelog_footer">Grazie per aver scelto E-Codes! 💚</string>
 
     <!-- Toast Messages -->

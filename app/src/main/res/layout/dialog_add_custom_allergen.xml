@@ -8,30 +8,22 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:hint="@string/custom_allergen_name_hint">
+        android:hint="@string/custom_allergen_hint">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editCustomAllergenName"
+            android:id="@+id/editCustomAllergen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text"
-            android:maxLines="1" />
+            android:inputType="text" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/custom_allergen_keywords_hint">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editCustomAllergenKeywords"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:minLines="2" />
-
-    </com.google.android.material.textfield.TextInputLayout>
+        android:layout_marginTop="8dp"
+        android:text="@string/custom_allergen_hint_example"
+        android:textSize="12sp"
+        android:textColor="#757575" />
 
 </LinearLayout>

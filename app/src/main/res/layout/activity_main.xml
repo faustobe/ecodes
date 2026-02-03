@@ -54,8 +54,8 @@
                 android:padding="24dp">
 
                 <View
-                    android:layout_width="200dp"
-                    android:layout_height="120dp"
+                    android:layout_width="@dimen/scan_frame_width"
+                    android:layout_height="@dimen/scan_frame_height"
                     android:background="@drawable/scan_frame" />
 
                 <TextView
@@ -150,35 +150,17 @@
 
     </LinearLayout>
 
-    <!-- Footer with info -->
-    <LinearLayout
+    <!-- Footer with version -->
+    <TextView
+        android:id="@+id/appVersionText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:padding="12dp"
         android:background="#FFFFFF"
         android:elevation="4dp"
-        android:gravity="center_vertical">
-
-        <TextView
-            android:id="@+id/appVersionText"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="v1.0.0"
-            android:textSize="11sp"
-            android:textColor="#757575" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnQuickHelp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/action_howto"
-            android:textSize="12sp"
-            app:icon="@android:drawable/ic_menu_help"
-            app:iconSize="16dp"
-            style="@style/Widget.MaterialComponents.Button.TextButton" />
-
-    </LinearLayout>
+        android:text="v1.0.0"
+        android:textSize="11sp"
+        android:textColor="#757575"
+        android:gravity="center" />
 
 </LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 108 108">
+  <!-- Background verde -->
+  <rect width="108" height="108" fill="#4CAF50"/>
+
+  <!-- Gruppo centrato -->
+  <g transform="translate(54, 54)">
+    <!-- Corpo principale della E -->
+    <path fill="#FFFFFF" d="M-18,-24 L-18,24 L18,24 L18,18 L-10,18 L-10,3 L14,3 L14,-3 L-10,-3 L-10,-18 L18,-18 L18,-24 Z"/>
+
+    <!-- Linee di scansione (effetto barcode) -->
+    <path fill="#FFFFFF" fill-opacity="0.3" d="M-24,-28 L-24,28 L-22,28 L-22,-28 Z"/>
+    <path fill="#FFFFFF" fill-opacity="0.3" d="M22,-28 L22,28 L24,28 L24,-28 Z"/>
+    <path fill="#FFFFFF" fill-opacity="0.2" d="M-28,-28 L-28,28 L-26,28 L-26,-28 Z"/>
+    <path fill="#FFFFFF" fill-opacity="0.2" d="M26,-28 L26,28 L28,28 L28,-28 Z"/>
+  </g>
+</svg>

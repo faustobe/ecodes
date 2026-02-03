@@ -116,10 +116,6 @@ public class MainActivity extends BaseActivity {
             appVersionText.setText("E-Codes v1.0");
         }
 
-        // Quick help button
-        com.google.android.material.button.MaterialButton btnQuickHelp = findViewById(R.id.btnQuickHelp);
-        btnQuickHelp.setOnClickListener(v -> startActivity(new Intent(this, HowToActivity.class)));
-
         // HTTP client setup
         httpClient = new OkHttpClient.Builder()
                 .connectTimeout(15, java.util.concurrent.TimeUnit.SECONDS)

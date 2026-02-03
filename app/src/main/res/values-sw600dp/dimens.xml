@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Scanner frame dimensions - Tablet -->
+    <dimen name="scan_frame_width">350dp</dimen>
+    <dimen name="scan_frame_height">200dp</dimen>
+</resources>

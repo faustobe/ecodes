@@ -1,0 +1,40 @@
+Scopri cosa si nasconde negli alimenti che consumi ogni giorno.
+E-Codes è lo scanner di additivi alimentari che ti aiuta a fare scelte consapevoli al supermercato. Scansiona il codice a barre di qualsiasi prodotto e scopri quali additivi contiene, con una valutazione chiara del livello di rischio.
+
+SCANSIONE VELOCE
+Inquadra il barcode e ottieni in pochi secondi l'elenco degli additivi presenti, con informazioni dettagliate su ognuno.
+
+RICERCA MANUALE
+Cerca qualsiasi additivo per codice E (es: E100) o per nome (es: Curcumina). Database locale con oltre 400 additivi.
+
+CLASSIFICAZIONE CHIARA
+Ogni additivo mostra un indicatore colorato di rischio:
+- Verde (A): Non tossico
+- Giallo (B): Rischio intolleranza
+- Arancione (C): Sospetto
+- Rosso (D): Sconsigliato
+- Viola (E): Pericoloso
+- Nero (F): Vietato nell'UE
+
+PROFILO PERSONALIZZATO
+Configura le tue preferenze e ricevi alert automatici:
+- Diete: vegano, vegetariano, halal
+- Allergeni: glutine, lattosio, frutta a guscio e tutti i 14 allergeni UE
+- Livello di cautela personalizzabile
+
+INFORMAZIONI PRODOTTO
+Per ogni scansione visualizzi Nutri-Score, NOVA Score, Eco-Score, valori nutrizionali e paese di origine.
+
+ALTRE FUNZIONALITA
+- Cronologia scansioni
+- Prodotti preferiti
+- Condivisione risultati
+- Funziona offline per ricerca manuale
+- Italiano e inglese
+
+PRIVACY GARANTITA
+Tutti i dati restano sul dispositivo. Nessun account, nessun tracciamento, nessuna pubblicita.
+
+Dati prodotti: Open Food Facts.
+
+Scarica E-Codes e scopri cosa mangi davvero!

@@ -11,4 +11,9 @@
         android:title="@string/action_history"
         android:icon="@android:drawable/ic_menu_recent_history"
         app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_howto"
+        android:title="@string/action_howto"
+        android:icon="@android:drawable/ic_menu_help"
+        app:showAsAction="never" />
 </menu>
