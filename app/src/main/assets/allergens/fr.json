@@ -1,0 +1,369 @@
+{
+  "lactose": {
+    "keywords": [
+      "lait",
+      "lactose",
+      "lactosérum",
+      "petit-lait",
+      "caséine",
+      "caséinate",
+      "caséinates",
+      "beurre",
+      "crème",
+      "crème de lait",
+      "yaourt",
+      "yogourt",
+      "fromage",
+      "babeurre",
+      "lactoglobuline",
+      "lactalbumine",
+      "lait en poudre",
+      "lait écrémé",
+      "lait entier",
+      "protéines de lait",
+      "protéine de lait",
+      "produits laitiers",
+      "laitiers",
+      "ricotta",
+      "mascarpone",
+      "mozzarella",
+      "parmesan"
+    ],
+    "exclusions": [
+      "sans lait",
+      "sans lactose",
+      "exempt de lactose",
+      "exempt de lait",
+      "ne contient pas de lait",
+      "ne contient pas de lactose",
+      "délactosé",
+      "lactose free",
+      "milk free",
+      "dairy free",
+      "sans produits laitiers",
+      "acide lactique",
+      "lactate",
+      "lactate de sodium",
+      "lactate de calcium",
+      "lactate de potassium",
+      "stéaroyl lactylate"
+    ],
+    "e_codes": [
+      "E270",
+      "E325",
+      "E326",
+      "E327",
+      "E472b",
+      "E480",
+      "E481",
+      "E482",
+      "E585",
+      "E966"
+    ]
+  },
+  "gluten": {
+    "keywords": [
+      "blé",
+      "orge",
+      "seigle",
+      "épeautre",
+      "kamut",
+      "gluten",
+      "malt",
+      "malt d'orge",
+      "extrait de malt",
+      "farine de blé",
+      "semoule",
+      "son",
+      "amidon de blé",
+      "protéine de blé",
+      "triticale",
+      "seitan",
+      "boulgour",
+      "couscous",
+      "chapelure",
+      "petit épeautre",
+      "blé dur"
+    ],
+    "exclusions": [
+      "sans gluten",
+      "exempt de gluten",
+      "ne contient pas de gluten",
+      "gluten free",
+      "glutamate",
+      "glutamate monosodique"
+    ],
+    "e_codes": [
+      "E1404",
+      "E1410",
+      "E1412",
+      "E1413",
+      "E1414",
+      "E1420",
+      "E1422",
+      "E1440",
+      "E1442",
+      "E1450"
+    ]
+  },
+  "eggs": {
+    "keywords": [
+      "œuf",
+      "œufs",
+      "oeuf",
+      "oeufs",
+      "jaune d'œuf",
+      "blanc d'œuf",
+      "albumine",
+      "œuf en poudre",
+      "œuf déshydraté",
+      "lécithine d'œuf",
+      "lysozyme",
+      "ovalbumine",
+      "ovomucine",
+      "mayonnaise",
+      "meringue",
+      "œuf entier",
+      "œuf pasteurisé"
+    ],
+    "exclusions": [
+      "sans œuf",
+      "sans œufs",
+      "sans oeuf",
+      "sans oeufs",
+      "exempt d'œuf",
+      "ne contient pas d'œufs",
+      "egg free"
+    ],
+    "e_codes": [
+      "E1105"
+    ]
+  },
+  "peanuts": {
+    "keywords": [
+      "arachide",
+      "arachides",
+      "cacahuète",
+      "cacahuètes",
+      "beurre de cacahuète",
+      "huile d'arachide",
+      "farine d'arachide"
+    ],
+    "e_codes": []
+  },
+  "tree_nuts": {
+    "keywords": [
+      "noisette",
+      "noisettes",
+      "amande",
+      "amandes",
+      "noix",
+      "pistache",
+      "pistaches",
+      "noix de cajou",
+      "macadamia",
+      "noix du brésil",
+      "noix de pécan",
+      "pignon",
+      "pignons",
+      "pignon de pin",
+      "châtaigne",
+      "châtaignes",
+      "farine de noisette",
+      "farine d'amande",
+      "pâte de noisette",
+      "pâte d'amande",
+      "massepain",
+      "praliné",
+      "fruits à coque"
+    ],
+    "e_codes": []
+  },
+  "fish": {
+    "keywords": [
+      "poisson",
+      "poissons",
+      "cabillaud",
+      "morue",
+      "thon",
+      "saumon",
+      "anchois",
+      "sardine",
+      "sardines",
+      "maquereau",
+      "daurade",
+      "bar",
+      "loup",
+      "truite",
+      "sole",
+      "merlu",
+      "colin",
+      "stockfisch",
+      "sauce de poisson",
+      "huile de poisson",
+      "gélatine de poisson",
+      "surimi"
+    ],
+    "e_codes": []
+  },
+  "crustaceans": {
+    "keywords": [
+      "crustacé",
+      "crustacés",
+      "crevette",
+      "crevettes",
+      "langoustine",
+      "langoustines",
+      "homard",
+      "crabe",
+      "crabes",
+      "écrevisse",
+      "écrevisses",
+      "fruits de mer"
+    ],
+    "e_codes": []
+  },
+  "mollusks": {
+    "keywords": [
+      "mollusque",
+      "mollusques",
+      "moule",
+      "moules",
+      "palourde",
+      "palourdes",
+      "huître",
+      "huîtres",
+      "calmar",
+      "calmars",
+      "seiche",
+      "seiches",
+      "poulpe",
+      "coquille saint-jacques",
+      "escargot",
+      "escargots"
+    ],
+    "e_codes": []
+  },
+  "soy": {
+    "keywords": [
+      "soja",
+      "soya",
+      "graines de soja",
+      "farine de soja",
+      "huile de soja",
+      "lécithine de soja",
+      "protéine de soja",
+      "protéines de soja",
+      "lait de soja",
+      "sauce soja",
+      "tofu",
+      "tempeh",
+      "miso",
+      "edamame",
+      "germes de soja",
+      "pousses de soja"
+    ],
+    "exclusions": [
+      "sans soja",
+      "exempt de soja",
+      "ne contient pas de soja",
+      "soy free"
+    ],
+    "e_codes": [
+      "E322",
+      "E426"
+    ]
+  },
+  "celery": {
+    "keywords": [
+      "céleri",
+      "céleri-rave",
+      "sel de céleri",
+      "extrait de céleri",
+      "graines de céleri"
+    ],
+    "e_codes": []
+  },
+  "mustard": {
+    "keywords": [
+      "moutarde",
+      "graines de moutarde",
+      "farine de moutarde",
+      "huile de moutarde",
+      "sauce moutarde"
+    ],
+    "e_codes": []
+  },
+  "sesame": {
+    "keywords": [
+      "sésame",
+      "graines de sésame",
+      "huile de sésame",
+      "pâte de sésame",
+      "tahini",
+      "tahina",
+      "gomasio"
+    ],
+    "e_codes": []
+  },
+  "lupin": {
+    "keywords": [
+      "lupin",
+      "lupins",
+      "farine de lupin",
+      "graines de lupin"
+    ],
+    "e_codes": []
+  },
+  "sulfites": {
+    "keywords": [
+      "sulfite",
+      "sulfites",
+      "dioxyde de soufre",
+      "anhydride sulfureux",
+      "bisulfite",
+      "métabisulfite"
+    ],
+    "e_codes": [
+      "E220",
+      "E221",
+      "E222",
+      "E223",
+      "E224",
+      "E226",
+      "E227",
+      "E228"
+    ]
+  },
+  "nickel": {
+    "keywords": [
+      "cacao",
+      "chocolat",
+      "noisette",
+      "noisettes",
+      "amande",
+      "amandes",
+      "noix",
+      "arachide",
+      "arachides",
+      "réglisse",
+      "avoine",
+      "son d'avoine",
+      "farine d'avoine",
+      "farine de soja",
+      "soja",
+      "lentilles",
+      "pois chiches",
+      "haricots",
+      "petits pois",
+      "épinards",
+      "tomate",
+      "concentré de tomate"
+    ],
+    "e_codes": [
+      "E150c",
+      "E150d",
+      "E952"
+    ]
+  }
+}

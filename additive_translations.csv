@@ -1,0 +1,247 @@
+additive_id,notes
+1,Curcumin. Natural yellow colorant from turmeric. Safe. Has anti-inflammatory properties. Used in mustard and curry products.
+2,Riboflavin (Vitamin B2). Natural yellow-orange colorant. Safe and nutritious. Found in many foods.
+3,Tartrazine. Synthetic yellow dye. May cause hyperactivity in children. Can trigger allergic reactions. Subject to labeling requirements.
+4,Chrysoine - synthetic yellow-orange dye. BANNED in many countries including EU. Should not be in commerce.
+5,Quinoline Yellow. Synthetic dye. May cause hyperactivity in children. Banned in some countries. Avoid if sensitive.
+6,Fast Yellow - azo dye. BANNED in EU and USA. Possible carcinogen. Not permitted.
+8,Yellow 2G - azo dye. BANNED in EU since 2007 for genotoxic risks. Do not use.
+9,Sunset Yellow. Azo dye. May cause hyperactivity in children and allergic reactions. Banned in some countries.
+10,Cochineal (Carmine). Natural red dye from insects. May cause severe allergic reactions. Not suitable for vegetarians.
+11,Orcein - red dye. BANNED in EU. Potential carcinogen.
+12,Carmoisine. Synthetic red dye. May cause hyperactivity in children. Can trigger asthma. Banned in some countries.
+13,Amaranth - red azo dye. BANNED in USA since 1976 (suspected carcinogen). In EU permitted only for caviar. AVOID.
+14,Ponceau 4R. Synthetic red dye. May cause hyperactivity in children. Linked to allergic reactions. Banned in USA and Norway.
+15,Ponceau SX - red dye. BANNED in many countries including EU.
+16,Ponceau 6R - red azo dye. BANNED in EU and USA. Suspected carcinogen.
+17,Erythrosine - red dye containing iodine. Possible thyroid disruptor and suspected carcinogen. Banned in many countries. AVOID.
+19,Allura Red. Synthetic red dye. May cause hyperactivity in children. Possible allergen. Widely used in USA.
+20,Indanthrene Blue - synthetic dye. BANNED in EU. Do not use.
+21,Patent Blue V. Synthetic blue dye. May cause allergic reactions. Banned in several countries including USA and Australia.
+22,Indigotine (Indigo Carmine). Synthetic blue dye. May cause nausea and high blood pressure. Possible allergen.
+23,Brilliant Blue FCF. Synthetic blue dye. Generally safe but may cause allergic reactions in sensitive individuals.
+24,Chlorophylls - natural green colorant extracted from plants. Completely safe.
+25,Copper complexes of chlorophylls - chlorophyll derivatives stabilized with copper. Safe.
+26,"Green S/Acid Brilliant Green - synthetic green dye. Approved by EFSA but banned in some countries (Canada, USA, Japan). Possible rare allergic reactions."
+27,Plain caramel. Natural brown colorant. Generally safe. Widely used in soft drinks and sauces.
+29,Ammonia caramel. Brown colorant. May contain traces of ammonia. Generally recognized as safe in small amounts.
+30,Sulfite ammonia caramel. Most widely used caramel. Contains sulfites - may cause reactions in asthmatics. Common in cola drinks.
+31,"Brilliant Black BN - black azo dye. Possible allergies. Banned in many countries (USA, Canada, Japan). Should be limited."
+32,Carbon Black 7984 - black dye from coal. BANNED in EU for safety reasons.
+33,"Vegetable carbon - black colorant from plant combustion. Controversial, may interfere with medications."
+34,Brown FK - synthetic brown dye. Approved in EU but banned in many other countries. Use with caution.
+35,"Brown HT/Chocolate Brown - synthetic brown dye. Approved by EFSA but banned in some countries (USA, Australia). Possible rare allergies."
+36,Carotenes (Beta-carotene). Natural orange colorant and vitamin A precursor. Safe and nutritious. Found in carrots and many vegetables.
+38,Paprika extract. Natural red-orange colorant. Safe. Derived from paprika peppers. Used in cheese and sauces.
+47,Beetroot Red/Betanin - natural red-purple colorant. Very safe.
+48,"Anthocyanins. Natural purple-red colorants from fruits. Safe. Found in berries, grapes, and red cabbage."
+49,"Calcium carbonate - white colorant, calcium source. Completely safe."
+50,Titanium dioxide - white colorant. EFSA evaluating ban for possible risks (nanoparticles). France already banned since 2020. AVOID.
+51,"Iron oxides and hydroxides - yellow/red/black colorants. Natural, very safe."
+52,Aluminium - metallic colorant. Controversial (links to Alzheimer not proven but caution advised).
+53,"Silver - used for food decorations. Expensive, inert, non-toxic."
+54,Gold - used for food decorations. Completely inert.
+55,Lithol Rubine BK/Pigment Ruby - synthetic red dye. Only for cheese rind. Limited and specific use.
+57,"Common preservative. Generally safe. Used in beverages, cheese, and baked goods."
+58,Sodium sorbate - salt of sorbic acid. Safe like E200.
+59,"Potassium sorbate. Widely used preservative. Generally recognized as safe. Found in wine, cheese, and dried meats."
+60,Calcium sorbate - like E200-202. Safe.
+61,Benzoic acid. Natural preservative found in berries. May cause allergic reactions. Not recommended for children.
+62,May cause allergic reactions. Avoid with asthma. Common in soft drinks.
+63,Potassium benzoate - like E211. Possible allergies.
+64,Calcium benzoate - like E211-212. Possible allergies.
+65,"Ethyl p-hydroxybenzoate (paraben) - preservative. Possible endocrine disruptor. Controversial, limit use."
+66,"Sodium ethyl p-hydroxybenzoate - like E214. Paraben, controversial."
+67,Propyl p-hydroxybenzoate - paraben preservative. Possible endocrine disruptor. BANNED in EU since 2006.
+68,Sodium propyl p-hydroxybenzoate - paraben. BANNED in EU together with E216.
+69,Methyl p-hydroxybenzoate - paraben. Less controversial than E214-217 but use caution.
+70,Sodium methyl p-hydroxybenzoate - like E218.
+71,Sulfites - may cause reactions in asthmatics. Used in wine and dried fruits.
+72,Sodium sulfite. May trigger asthma attacks. Destroys vitamin B1. Common in wine and dried fruits.
+73,Sodium bisulfite - sulfite. Risk of allergies/asthma.
+74,Sodium metabisulfite - common sulfite in wine. Caution for asthmatics and allergics.
+75,Potassium metabisulfite - sulfite used in wine. Caution for asthmatics.
+76,"Potassium sulfite - sulfite preservative. Like E220-224, caution for asthmatics. Destroys vitamin B1."
+77,"Calcium sulfite - preservative. Caution for asthmatics, may cause severe respiratory reactions."
+78,Calcium hydrogen sulfite - sulfite preservative. Risk of allergies and asthma like other sulfites.
+79,Potassium bisulfite - sulfite preservative used in wine. Caution for asthmatics.
+80,Biphenyl/Diphenyl - preservative for citrus (on peel). HIGHLY TOXIC if ingested. Always wash treated fruit. Banned in some countries.
+81,Orthophenylphenol - fungicide for citrus peels. Possible carcinogen. Wash fruit well. Banned in some countries.
+82,"Sodium orthophenylphenate - like E231, fungicide for peels. Always wash treated fruit."
+83,Thiabendazole - systemic fungicide for fruit. Can penetrate peel. Possible neurological effects. Limit exposure.
+84,"Nisin - natural bacteriostatin from fermentation. Safe, used in cheeses and preserves."
+85,Natamycin/Pimaricin - natural antifungal. Used only for surface of cheeses and cured meats.
+89,Hexamethylenetetramine - synthetic preservative. Can release formaldehyde (carcinogenic). AVOID. Banned in many countries.
+90,Formaldehyde - preservative. PROVEN CARCINOGEN. BANNED in EU for food use.
+91,Dimethyl dicarbonate - preservative for beverages. Decomposes rapidly into CO2 and methanol (traces).
+92,"Potassium nitrite - cured meat preservative. Like E250, can form carcinogenic nitrosamines. Low ADI, limit cured meats."
+93,Sodium nitrite. Used in cured meats. May form carcinogenic compounds at high temperatures. Keep consumption moderate.
+94,Sodium nitrate. Preservative in cured meats. Converted to nitrite in the body. Moderate consumption advised.
+95,Potassium nitrate. Used in cured meats and cheese. May affect blood pressure. Limit intake.
+96,Acetic acid - vinegar. Completely natural and safe.
+97,"Potassium acetate - acidity regulator. Salt of vinegar, completely safe."
+98,"Sodium acetate/Sodium diacetate - acidity regulator and preservative. Safe, from vinegar."
+99,"Calcium acetate - acidity regulator. Safe, also provides calcium."
+100,Ammonium acetate - acidity regulator. Safe in food use.
+101,Lactic acid. Natural acid produced in muscles and by fermentation. Safe. Common in fermented foods and beverages.
+102,"Propionic acid - anti-mold preservative. Safe, also produced by the body."
+103,Sodium propionate - like E280. Safe.
+104,"Calcium propionate - preservative in bread. Safe, also provides calcium."
+106,Boric acid - preservative. CONTROVERSIAL: possible reproductive toxicity. Limited or banned in many countries. AVOID.
+107,Borax/Sodium tetraborate - preservative. BANNED in EU and many countries for toxicity. Should not be present.
+108,Carbon dioxide - CO2. Completely natural and safe.
+109,Malic acid. Natural acid found in apples. Safe. Used in beverages and candies for tartness.
+110,Fumaric acid. Natural acid found in many plants. Safe. More sour than citric acid. Used in beverages.
+111,Vitamin C. Antioxidant. Safe and beneficial. Found in many foods.
+112,Sodium ascorbate. Salt of vitamin C. Safe antioxidant. Used in cured meats and beverages.
+113,Calcium ascorbate - vitamin C + calcium. Safe and beneficial.
+114,"Potassium ascorbate - salt of vitamin C. Safe, antioxidant."
+115,Fatty acid esters of ascorbic acid. Safe antioxidant.
+116,Tocopherol-rich extract (Vitamin E). Natural antioxidant. Safe and nutritious. Protects fats from oxidation.
+117,"Alpha-tocopherol - Vitamin E. Essential, powerful antioxidant, safe."
+118,Gamma-tocopherol - natural vitamin E form. Safe antioxidant.
+119,Delta-tocopherol - natural vitamin E. Safe antioxidant.
+120,Propyl gallate. Synthetic antioxidant. May cause allergic reactions in sensitive individuals. Used in fats and oils.
+121,Octyl gallate - synthetic antioxidant. CONTROVERSIAL like E310. Possible allergies. Limit.
+122,"Dodecyl gallate - synthetic antioxidant. CONTROVERSIAL, possible allergies and disturbances. Banned in some countries."
+123,"Erythorbic acid/Isoascorbic acid - vitamin C isomer. Safe, less vitamin activity but good antioxidant."
+124,"Sodium erythorbate - salt of erythorbic acid. Safe, common antioxidant in cured meats."
+125,"TBHQ (tert-Butyl hydroquinone) - powerful synthetic antioxidant. CONTROVERSIAL: possible DNA effects, hyperactivity. Banned in Japan, EU restrictions. Limit."
+126,BHA (Butylated hydroxyanisole). Controversial antioxidant. Some studies suggest potential health risks. Banned in some countries.
+127,BHT (Butylated hydroxytoluene). Synthetic antioxidant. Safety debated. May cause allergic reactions. Used in fats and cereals.
+128,Lecithin. Natural emulsifier from soybeans or eggs. Safe and beneficial. Contains choline. Very widely used.
+129,Sodium lactate. Salt of lactic acid. Safe. Used in meat products and cheese. Acts as preservative and humectant.
+130,"Potassium lactate - lactic acid salt. Safe, used in sports drinks."
+131,"Calcium lactate - provides calcium. Safe, used in supplements and foods."
+132,Ammonium lactate - acidity regulator. NOT PERMITTED IN EU.
+133,Magnesium lactate - provides magnesium. NOT PERMITTED IN EU.
+134,Citric acid. Natural acidifier. Generally safe. Common in beverages.
+135,Sodium citrates. Salts of citric acid. Safe. Used as acidity regulator in beverages and jams.
+136,Potassium citrate - citric acid salt. Safe.
+137,Calcium citrate - calcium source. Safe and beneficial.
+138,"Tartaric acid - natural acid from grapes. Safe, used in wine and sweets."
+139,"Sodium tartrate - tartaric acid salt. Safe, acidity regulator."
+140,"Potassium tartrate/Cream of tartar - tartaric acid salt. Safe, natural baking powder."
+141,"Sodium potassium tartrate/Rochelle salt - double salt. Safe, used in pastry."
+142,Phosphoric acid. Acidifier in cola drinks. Excessive consumption may affect calcium absorption. Contributes to tooth enamel erosion.
+152,"Magnesium phosphate - acidity regulator, magnesium source. Safe."
+153,"Sodium malate - malic acid salt. Safe, acidity regulator."
+154,Potassium malate - malic acid salt. Safe.
+155,"Calcium malate - malic acid salt. Safe, calcium source."
+156,"Metatartaric acid - tartaric acid derivative. Safe, wine stabilizer."
+157,Calcium tartrate - tartaric acid salt. Safe.
+158,"Adipic acid - synthetic acidifier. Safe, used in beverages and baking powders."
+159,"Sodium adipate - adipic acid salt. Safe, acidity regulator."
+160,Potassium adipate - adipic acid salt. Safe.
+161,"Succinic acid - natural organic acid. Safe, present in the body (Krebs cycle). Used as flavor enhancer."
+162,Sodium fumarate - fumaric acid salt. Possible reactions in sensitive individuals.
+163,Potassium fumarate - fumaric acid salt. Safe.
+164,"Calcium fumarate - fumaric acid salt. Safe, calcium source."
+165,"1,4-Heptonolactone - acidifier. Safe."
+166,"Nicotinic acid/Niacin - Vitamin B3. Essential, very safe. Used as fortifier."
+167,"Triammonium citrate - citric acid salt. Safe, acidity regulator."
+168,Ammonium ferric citrate - iron salt. Iron source. Possible reactions in sensitive individuals.
+169,"Calcium disodium EDTA - sequestrant (binds metals). Safe, prevents oxidation and rancidity."
+170,Alginic acid. Natural thickener from seaweed. Safe. Used in ice cream and jellies. May inhibit nutrient absorption in large amounts.
+171,Sodium alginate. Natural thickener from seaweed. Safe. Common in ice cream and instant puddings.
+172,"Potassium alginate - from seaweed. Safe, natural thickener and gelling agent."
+173,"Ammonium alginate - from algae. Safe, gelling agent."
+174,"Calcium alginate - from algae. Safe, used in molecular gastronomy (spherification)."
+175,"Propylene glycol alginate - modified algae. Safe, emulsifier."
+176,"Agar-agar - natural gelling agent from red algae. Very safe, high in fiber. Also used as natural laxative."
+177,Carrageenan. Natural thickener from red seaweed. Safety debated - some studies suggest digestive issues. Used in dairy products.
+180,Locust bean gum. Natural thickener from carob tree. Safe. Used in ice cream and baked goods.
+181,Guar gum. Natural thickener from guar beans. Safe in normal amounts. May cause digestive issues in large quantities.
+182,"Tragacanth/Gum tragacanth - natural resin from shrubs. Safe, traditional thickener."
+183,Acacia gum (Gum arabic). Natural thickener from acacia trees. Safe. Used in confectionery and beverages.
+184,Xanthan gum. Microbial polysaccharide. Safe. Excellent thickener and stabilizer. Used in gluten-free products.
+185,"Karaya gum - natural resin from trees. Safe, thickener. Possible rare allergies."
+186,"Tara gum - from seeds. Safe, natural thickener similar to locust bean gum."
+187,"Gellan gum - from bacterial fermentation. Safe, powerful gelling agent. Used in plant-based alternatives."
+188,Sorbitol. Sugar alcohol. May cause laxative effect in large amounts. Used in sugar-free products. Generally safe.
+189,Mannitol. Sugar alcohol. May have laxative effect. Used in chewing gum and diabetic products. Generally safe.
+190,"Glycerol/glycerin - natural humectant. Completely safe, also produced by the body. Can be from plant or animal source."
+191,"Soybean hemicellulose - fiber from soy. Safe, prebiotic."
+192,Polyoxyethylene (8) stearate - synthetic emulsifier. NOT PERMITTED IN EU.
+193,Polyoxyethylene (40) stearate - emulsifier. Safe.
+194,"Polysorbate 20/Polyoxyethylene sorbitan monolaurate - synthetic emulsifier. Generally safe, possible rare allergies."
+195,Polysorbate 80/Polyoxyethylene sorbitan monooleate - common emulsifier. Generally safe but recent studies suggest caution with intestinal microbiota. Moderation.
+196,Polysorbate 40 - emulsifier. Used in ice cream. Possible allergies.
+197,Polysorbate 60 - emulsifier. Possible allergies.
+198,Polysorbate 65 - emulsifier. Possible allergies.
+201,Gelatin - protein from animal bones/skin/cartilage (pork/beef). NOT VEGAN. NOT HALAL (if pork). Neutral for health.
+202,"Ammonium phosphatides - emulsifier from lecithin. Safe, used in chocolate."
+203,"Sucrose acetate isobutyrate - emulsifier in beverages. Safe according to EFSA, banned in some countries."
+204,"Glycerol esters of wood resin - emulsifier from pine. Safe, used in citrus beverages."
+205,Diphosphates (sodium/potassium/calcium) - acidity regulators and emulsifiers. Safe BUT excess phosphates problematic for kidneys. Present in many processed foods. LIMIT.
+206,"Triphosphates - emulsifiers and stabilizers in cured meats/cheeses. Like E450, limit excess phosphates."
+207,"Polyphosphates - powerful emulsifiers. Like E450-451, EXCESS problematic. Common in processed foods. MODERATION."
+208,"Beta-cyclodextrin - starch derivative. Safe, used to encapsulate flavors."
+212,"Methylcellulose - cellulose derivative. Safe, thickener and natural laxative."
+213,"Ethylcellulose - cellulose derivative. Safe, filming agent."
+214,"Hydroxypropylcellulose - cellulose derivative. Safe, thickener."
+215,"Hydroxypropylmethylcellulose/HPMC - cellulose derivative. Safe, vegetable capsule for supplements."
+216,Ethylmethylcellulose - cellulose derivative. Safe.
+217,"Carboxymethylcellulose - cellulose derivative. Safe, common thickener."
+218,Crosslinked sodium carboxymethylcellulose - modified cellulose. Safe.
+219,Enzymatically hydrolysed carboxymethylcellulose - modified cellulose. Safe.
+222,Mono- and diglycerides of fatty acids. Common emulsifier. Generally safe. May be derived from animal or plant sources.
+227,Mono- and diacetyl tartaric acid esters. Emulsifier used in bread. Generally safe. Improves dough strength.
+243,Sodium carbonates. Acidity regulator and raising agent. Safe. Common in baked goods. Also known as baking soda.
+245,Ammonium carbonates. Raising agent for baked goods. Safe - evaporates during baking. Used in cookies and crackers.
+279,Silicon dioxide. Anti-caking agent. Generally safe. Found in powdered foods. Prevents clumping.
+280,Calcium silicate. Anti-caking agent. Safe. Used in powdered and granulated foods.
+297,Glutamic acid. Natural amino acid. Flavor enhancer. Generally safe but may cause MSG sensitivity reactions in some people.
+298,Monosodium glutamate (MSG). Controversial flavor enhancer. May cause headaches and flushing in sensitive individuals. Widely used in Asian cuisine.
+299,Monopotassium glutamate. Flavor enhancer similar to MSG. May cause reactions in sensitive individuals. Used in processed foods.
+300,Calcium glutamate - flavor enhancer. Like E621-622.
+301,Monoammonium glutamate - flavor enhancer. Like MSG.
+302,Magnesium glutamate - flavor enhancer. Like MSG.
+303,"Guanylic acid - natural nucleotide. Safe, enhances umami flavor. Often combined with MSG."
+304,Disodium guanylate. Flavor enhancer often combined with MSG. Derived from fish or yeast. Not suitable for those with gout.
+305,"Dipotassium guanylate - guanylic acid salt. Safe, enhancer."
+306,Calcium guanylate - flavor enhancer. Safe.
+307,"Inosinic acid - natural nucleotide from meat/fish. Safe, umami flavor."
+308,Disodium inosinate. Flavor enhancer often combined with MSG. May trigger gout. Derived from meat or fish.
+309,Dipotassium inosinate - flavor enhancer. Safe.
+310,Calcium inosinate - enhancer. Safe.
+311,"Calcium 5'-ribonucleotides - mix E626+E630. Safe, powerful enhancer."
+312,"Disodium 5'-ribonucleotides - mix guanylate+inosinate. Widely used, safe. Potentiates MSG."
+316,"Beeswax - natural coating for fruit and candies. Safe, natural. NOT VEGAN."
+317,"Candelilla wax - plant wax from Mexican plant. Safe, vegan."
+318,"Carnauba wax - from Brazilian palm. Safe, hardest natural wax. Glazing agent."
+319,Shellac - resin from insects (Lac). Safe for coatings. NOT VEGAN.
+320,"Paraffin/Microcrystalline wax - from refined petroleum. Safe for coatings, not absorbed."
+322,"Montanic acid esters - synthetic wax. Safe, glazing agent."
+323,"Oxidized polyethylene wax - synthetic wax. Safe, coating."
+324,"L-cysteine - natural amino acid. Safe, flour improver. Often from feathers/hair (not vegan) or fermentation (vegan)."
+333,"Argon - inert noble gas. Safe, used as protective in packaging."
+334,"Helium - noble gas. Safe, rarely used in foods."
+335,"Nitrogen - inert gas. Safe, used in packaging and whipped cream."
+336,Nitrous oxide - laughing gas. Safe for food use (whipped cream). Do not inhale directly.
+339,Propane - gas. Safe for propellant.
+340,"Oxygen - gas. Safe, rarely used."
+341,Hydrogen - gas. Safe.
+342,Acesulfame K. Artificial sweetener. 200 times sweeter than sugar. Generally recognized as safe. Heat-stable.
+343,Aspartame. Artificial sweetener. Controversial. Contains phenylalanine - dangerous for phenylketonuria patients. Avoid if sensitive.
+344,Cyclamate. Artificial sweetener. Banned in USA since 1969. Allowed in EU but controversial. 30-50 times sweeter than sugar.
+345,Saccharin. First artificial sweetener. 300-500 times sweeter than sugar. Safe in moderate amounts. Metallic aftertaste.
+346,Sucralose. Artificial sweetener derived from sugar. 600 times sweeter than sugar. Heat-stable. Generally recognized as safe.
+347,"Thaumatin - sweet protein from African fruit. 2000x sweeter than sugar. Very safe, natural."
+348,"Neohesperidin DC - sweetener from citrus. 1000x sweeter. Safe, natural."
+349,Aspartame-acesulfame salt - mix E951+E950. Safe (with same aspartame precautions).
+350,Maltitol. Sugar alcohol. Approximately 75-90% as sweet as sugar. May cause laxative effect. Used in sugar-free products.
+351,"Lactitol - sugar alcohol from lactose. Safe, prebiotic. Possible laxative effect."
+352,Xylitol. Sugar alcohol from birch trees. Prevents tooth decay. May cause digestive issues in large amounts. Safe for diabetics.
+353,"Erythritol - sugar alcohol with zero calories. Very safe, better tolerated than other sugar alcohols. No laxative effect."
+354,"Quillaia extract - saponin from South American tree bark. Safe, natural foaming agent in beverages."
+355,"Invertase - enzyme from yeast. Safe, hydrolyzes sucrose. Used in artificial honey production."
+356,Lysozyme - antibacterial enzyme from egg white. Safe BUT from eggs (NOT VEGAN). Possible allergies.
+357,"Polydextrose - synthetic soluble fiber. Safe, prebiotic. Mild laxative effect."
+358,"Polyvinylpyrrolidone/PVP - synthetic polymer. Safe, stabilizer in beverages and pharmaceuticals."
+359,"Polyvinylpolypyrrolidone - polymer. Safe, stabilizer in wine and beer."
+379,"Triethyl citrate - ester. Safe, solvent and stabilizer."
+381,"Glyceryl diacetate/Diacetin - from glycerol. Safe, solvent and humectant."
+382,"Glyceryl triacetate/Triacetin - from glycerol. Safe, flavor solvent."
+384,"Propylene glycol/Propan-1,2-diol - alcohol. Safe, humectant and solvent. Widely used."
+385,Pectin. Natural gelling agent from fruits. Safe and beneficial. Contains soluble fiber. Used in jams and jellies.

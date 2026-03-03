@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">E-Codes</string>
+    <string name="app_full_name">E-Codes Scanner d\'Additifs</string>
+
+    <!-- Common Actions -->
+    <string name="action_home">Accueil</string>
+    <string name="action_history">Historique</string>
+    <string name="action_favorites">Favoris</string>
+    <string name="action_profile">Profil</string>
+    <string name="action_howto">Guide</string>
+    <string name="action_about">À propos</string>
+    <string name="action_changelog">Nouveautés</string>
+    <string name="action_search">Rechercher</string>
+    <string name="action_share">Partager</string>
+    <string name="action_delete">Supprimer</string>
+    <string name="action_clear_all">Tout effacer</string>
+    <string name="action_cancel">Annuler</string>
+    <string name="action_ok">OK</string>
+    <string name="action_save">Enregistrer</string>
+    <string name="action_add">Ajouter</string>
+
+    <!-- Splash Screen -->
+    <string name="splash_welcome">Bienvenue !</string>
+    <string name="splash_subtitle">Scanner d\'Additifs Alimentaires</string>
+    <string name="splash_description">E-Codes vous aide à identifier les additifs alimentaires dans les produits que vous consommez.</string>
+    <string name="splash_feature_scan">Scannez le code-barres</string>
+    <string name="splash_feature_search">Recherche manuelle</string>
+    <string name="splash_feature_profile">Configurez votre profil</string>
+    <string name="splash_feature_alerts">Recevez des alertes personnalisées</string>
+    <string name="splash_features">✓ Scannez le code-barres\n✓ Recherche manuelle\n✓ Configurez votre profil\n✓ Recevez des alertes personnalisées</string>
+    <string name="splash_privacy">🔒 Confidentialité garantie : toutes les données restent sur votre appareil</string>
+    <string name="splash_start">Commencer</string>
+
+    <!-- Nutrition Tips -->
+    <string-array name="nutrition_tips">
+        <item>Mangez au moins 5 portions de fruits et légumes par jour</item>
+        <item>Buvez au moins 2 litres d\'eau par jour</item>
+        <item>Préférez les céréales complètes aux céréales raffinées</item>
+        <item>Limitez la consommation de sucres ajoutés</item>
+        <item>Lisez toujours les étiquettes des produits</item>
+        <item>Variez votre alimentation autant que possible</item>
+        <item>Réduisez la consommation de sel et d\'aliments trop salés</item>
+        <item>Mâchez lentement pour mieux digérer</item>
+        <item>Les légumineuses sont une excellente source de protéines végétales</item>
+        <item>Limitez la consommation d\'aliments ultra-transformés</item>
+        <item>Le poisson est riche en oméga-3, bénéfique pour le cœur</item>
+        <item>Les fruits à coque sont un en-cas sain et nutritif</item>
+        <item>Préférez la cuisson à la vapeur ou au grill</item>
+        <item>Les couleurs dans l\'assiette indiquent une variété de nutriments</item>
+        <item>Consommez les produits laitiers avec modération</item>
+        <item>Évitez les boissons sucrées</item>
+        <item>Un repas équilibré contient des protéines, des glucides et des légumes</item>
+        <item>Le yaourt nature est riche en probiotiques</item>
+    </string-array>
+
+    <!-- Main Activity -->
+    <string name="main_search_hint">Rechercher un additif (ex : E100, Curcumine…)</string>
+    <string name="main_camera_status">Cadrez le code-barres</string>
+    <string name="main_scan_title">📷 Scanner Code-Barres</string>
+    <string name="main_scan_description">Cadrez le code-barres du produit pour identifier les additifs</string>
+    <string name="main_search_title">🔍 Recherche Manuelle</string>
+    <string name="main_quick_help">❓ Guide rapide</string>
+    <string name="main_results_found">%1$d résultat%2$s trouvé%3$s</string>
+    <string name="main_result_singular"></string>
+    <string name="main_result_plural">s</string>
+    <string name="main_no_results">Aucun résultat trouvé</string>
+    <string name="main_barcode_found">Code trouvé : %s</string>
+    <string name="main_additives_found">%1$d codes E trouvés dans :\n%2$s</string>
+    <string name="main_no_ingredients">Ingrédients non disponibles.\nRecherchez manuellement les codes E</string>
+
+    <!-- Additive count -->
+    <string name="additive_count_singular">%d additif</string>
+    <string name="additive_count_plural">%d additifs</string>
+    <string name="additives_detected_singular">%d additif détecté</string>
+    <string name="additives_detected_plural">%d additifs détectés</string>
+
+    <!-- Results Activity -->
+    <string name="results_title">Analyse du Produit</string>
+    <string name="results_no_additives_count">Aucun additif détecté</string>
+    <string name="results_info">Info</string>
+    <string name="results_warning_title">⚠ Note importante</string>
+    <string name="results_warning_text">Le système détecte automatiquement les additifs de la base de données Open Food Facts.\n\n• Les additifs écrits en toutes lettres (ex : "gomme de caroube") pourraient ne pas être détectés s\'ils ne sont pas tagués comme code E\n• La liste des ingrédients pourrait être dans une langue étrangère\n\nVérifiez toujours l\'étiquette complète et utilisez la recherche manuelle si nécessaire.</string>
+    <string name="results_manual_search">Recherche manuelle</string>
+    <string name="results_ingredients">Ingrédients</string>
+    <string name="results_profile_alert">⚠️ Alerte profil</string>
+    <string name="results_no_results">Aucun additif trouvé dans l\'image</string>
+    <string name="results_certain_title">✓ Additifs détectés</string>
+    <string name="results_certain_title_count">✓ Additifs détectés (%d)</string>
+    <string name="results_ambiguous_title">⚠ Additifs possibles - Vérifiez manuellement</string>
+    <string name="results_ambiguous_desc">Ces additifs contiennent des mots ambigus trouvés dans le texte. Vérifiez l\'étiquette pour confirmer.</string>
+    <string name="results_favorite_add">Ajouter aux favoris</string>
+    <string name="results_favorite_remove">Retirer des favoris</string>
+
+    <!-- Nutri-Score and Nova Score -->
+    <string name="nutriscore_label">Nutri-Score</string>
+    <string name="nova_label">NOVA</string>
+
+    <!-- Origin Info -->
+    <string name="origin_manufacturing">Fabriqué en</string>
+    <string name="origin_ingredients">Origine des ingrédients</string>
+
+    <!-- Product Info -->
+    <string name="product_brand">Marque</string>
+    <string name="product_quantity">Quantité</string>
+    <string name="product_no_additives">Produit sans additifs</string>
+    <string name="product_no_additives_desc">Aucun additif alimentaire (code E) détecté dans ce produit</string>
+
+    <!-- Eco-Score -->
+    <string name="ecoscore_label">Eco-Score</string>
+    <string name="ecoscore_a">Impact environnemental très faible</string>
+    <string name="ecoscore_b">Impact environnemental faible</string>
+    <string name="ecoscore_c">Impact environnemental modéré</string>
+    <string name="ecoscore_d">Impact environnemental élevé</string>
+    <string name="ecoscore_e">Impact environnemental très élevé</string>
+
+    <!-- Labels/Certifications -->
+    <string name="labels_title">Certifications</string>
+
+    <!-- Allergens -->
+    <string name="allergens_title">Allergènes</string>
+    <string name="allergens_contains">Contient</string>
+    <string name="allergens_traces">Peut contenir des traces de</string>
+
+    <!-- Nutritional Values -->
+    <string name="nutrition_title">Valeurs nutritionnelles</string>
+    <string name="nutrition_per_100g">pour 100g</string>
+    <string name="nutrition_energy">Énergie</string>
+    <string name="nutrition_fat">Matières grasses</string>
+    <string name="nutrition_saturated_fat">dont acides gras saturés</string>
+    <string name="nutrition_carbs">Glucides</string>
+    <string name="nutrition_sugars">dont sucres</string>
+    <string name="nutrition_fiber">Fibres</string>
+    <string name="nutrition_proteins">Protéines</string>
+    <string name="nutrition_salt">Sel</string>
+    <string name="nutrition_kcal">kcal</string>
+    <string name="nutrition_g">g</string>
+
+    <!-- Nova Score -->
+    <string name="nova_1">Aliments non transformés</string>
+    <string name="nova_2">Ingrédients culinaires</string>
+    <string name="nova_3">Aliments transformés</string>
+    <string name="nova_4">Ultra-transformés</string>
+    <string name="nutriscore_not_available">N/D</string>
+
+    <!-- Detail Activity -->
+    <string name="detail_title">Détails</string>
+    <string name="detail_code">Code :</string>
+    <string name="detail_name">Nom :</string>
+    <string name="detail_classification">Classification :</string>
+    <string name="detail_description">Description :</string>
+    <string name="detail_function">Fonction :</string>
+    <string name="detail_sources">Sources :</string>
+    <string name="detail_vegan">Végan</string>
+    <string name="detail_vegetarian">Végétarien</string>
+    <string name="detail_halal">Halal</string>
+    <string name="detail_not_available">Non disponible</string>
+    <string name="detail_share_subject">Additif %s</string>
+    <string name="detail_share_text">Additif %1$s - %2$s\nClassification : %3$s\n\n%4$s\n\nPartagé depuis E-Codes Scanner</string>
+
+    <!-- Profile Activity -->
+    <string name="profile_title">Profil Personnel</string>
+    <string name="profile_privacy_title">🔒 Confidentialité Garantie</string>
+    <string name="profile_privacy_text">Toutes les données du profil sont enregistrées UNIQUEMENT sur votre appareil. Aucune information n\'est envoyée à des serveurs externes.</string>
+    <string name="profile_diet_title">🥗 Préférences Alimentaires</string>
+    <string name="profile_vegan">Végan</string>
+    <string name="profile_vegetarian">Végétarien</string>
+    <string name="profile_halal">Halal</string>
+    <string name="profile_caution_title">⚠️ Niveau de Prudence</string>
+    <string name="profile_caution_description">Recevez des alertes pour les additifs dépassant le niveau choisi</string>
+    <string name="profile_caution_strict">Strict (uniquement A - non toxique)</string>
+    <string name="profile_caution_moderate">Modéré (A + B - risque d\'intolérance)</string>
+    <string name="profile_caution_permissive">Permissif (A + B + C - suspect)</string>
+    <string name="profile_caution_all">Tous (aucun filtre)</string>
+    <string name="profile_allergen_title">🩺 Allergies et Intolérances</string>
+    <string name="profile_allergen_description">Recevez des alertes pour les ingrédients à risque (14 allergènes UE)</string>
+    <string name="profile_allergen_sulfites">Sulfites (E220-E228)</string>
+    <string name="profile_allergen_lactose">Lait et lactose</string>
+    <string name="profile_allergen_gluten">Gluten (blé, orge, seigle…)</string>
+    <string name="profile_allergen_eggs">Œufs</string>
+    <string name="profile_allergen_peanuts">Arachides</string>
+    <string name="profile_allergen_tree_nuts">Fruits à coque</string>
+    <string name="profile_allergen_fish">Poisson</string>
+    <string name="profile_allergen_crustaceans">Crustacés</string>
+    <string name="profile_allergen_mollusks">Mollusques</string>
+    <string name="profile_allergen_soy">Soja</string>
+    <string name="profile_allergen_celery">Céleri</string>
+    <string name="profile_allergen_mustard">Moutarde</string>
+    <string name="profile_allergen_sesame">Sésame</string>
+    <string name="profile_allergen_lupin">Lupin</string>
+    <string name="profile_allergen_nickel">Nickel (intolérance)</string>
+
+    <!-- Custom allergens -->
+    <string name="profile_custom_allergens_title">Intolérances personnalisées</string>
+    <string name="profile_add_custom_allergen">Ajouter une intolérance</string>
+    <string name="custom_allergen_dialog_title">Nouvelle intolérance</string>
+    <string name="custom_allergen_hint">Ingrédient à éviter</string>
+    <string name="custom_allergen_hint_example">Vous pouvez ajouter des synonymes séparés par une virgule\nex : tomate, pomodoro, sauce tomate</string>
+    <string name="custom_allergen_required">Saisissez au moins un ingrédient</string>
+    <string name="custom_allergen_added">Intolérance ajoutée</string>
+    <string name="custom_allergen_removed">Intolérance supprimée</string>
+    <string name="custom_allergen_delete_title">Supprimer l\'intolérance</string>
+    <string name="custom_allergen_delete_message">Voulez-vous supprimer \"%s\" ?</string>
+    <string name="profile_clear">Effacer le profil</string>
+    <string name="profile_clear_title">Effacer le profil</string>
+    <string name="profile_clear_message">Voulez-vous effacer toutes les préférences du profil ? Cette action est irréversible.</string>
+    <string name="profile_clear_confirm">Effacer</string>
+    <string name="profile_cleared">Profil effacé</string>
+    <string name="profile_saved">Enregistré</string>
+
+    <!-- History Activity -->
+    <string name="history_title">Historique</string>
+    <string name="history_subtitle">Derniers produits consultés</string>
+    <string name="history_empty">Aucun scan dans l\'historique</string>
+    <string name="history_empty_subtitle">Commencez à scanner ou rechercher des additifs</string>
+    <string name="history_clear_title">Effacer l\'historique</string>
+    <string name="history_clear_message">Voulez-vous effacer tout l\'historique des scans ?</string>
+    <string name="history_cleared">Historique effacé</string>
+
+    <!-- Favorites Activity -->
+    <string name="favorites_title">Favoris</string>
+    <string name="favorites_subtitle">Vos produits enregistrés</string>
+    <string name="favorites_empty">Aucun favori enregistré</string>
+    <string name="favorites_empty_subtitle">Ajoutez des produits aux favoris depuis l\'écran de détails</string>
+    <string name="favorites_clear_title">Effacer les favoris</string>
+    <string name="favorites_clear_message">Voulez-vous supprimer tous les produits des favoris ?</string>
+    <string name="favorites_cleared">Favoris effacés</string>
+    <string name="favorites_removed">Retiré des favoris</string>
+    <string name="favorites_added">Ajouté aux favoris</string>
+
+    <!-- HowTo Activity -->
+    <string name="howto_title">Guide d\'Utilisation</string>
+    <string name="howto_scanner_title">📷 Scanner Code-Barres</string>
+    <string name="howto_scanner_text">Depuis l\'écran principal, cadrez le code-barres d\'un produit alimentaire. L\'application recherchera automatiquement le produit dans la base de données Open Food Facts et identifiera tous les additifs présents dans les ingrédients.</string>
+    <string name="howto_manual_title">🔍 Recherche Manuelle</string>
+    <string name="howto_manual_text">Utilisez la barre de recherche pour trouver des additifs spécifiques. Vous pouvez rechercher par :\n\n• Code E (ex : E100)\n• Nom commun (ex : Curcumine)\n• Fonction (ex : colorant)\n\nVous recevrez une liste avec tous les additifs correspondants.</string>
+    <string name="howto_classification_title">📊 Classification des Additifs</string>
+    <string name="howto_classification_text">Chaque additif affiche une barre colorée indiquant le niveau de risque. Plus la barre est remplie, plus le danger potentiel est élevé :</string>
+    <string name="howto_classification_safe">Non toxique - Sans danger pour la consommation</string>
+    <string name="howto_classification_intolerance">Risque d\'intolérance - Réactions possibles chez les personnes sensibles</string>
+    <string name="howto_classification_suspect">Suspect - Études en cours sur la sécurité</string>
+    <string name="howto_classification_risky">Déconseillé - Fort soupçon de toxicité</string>
+    <string name="howto_classification_dangerous">Dangereux - Peut causer des troubles graves</string>
+    <string name="howto_classification_banned">Interdit - Non autorisé dans l\'Union européenne</string>
+    <string name="howto_nutriscore_title">🔤 Nutri-Score</string>
+    <string name="howto_nutriscore_text">Le Nutri-Score est un système d\'étiquetage nutritionnel développé en France et adopté dans plusieurs pays européens. Il évalue la qualité nutritionnelle globale du produit avec une lettre de A à E :</string>
+    <string name="howto_nutriscore_a">Excellente qualité nutritionnelle</string>
+    <string name="howto_nutriscore_b">Bonne qualité nutritionnelle</string>
+    <string name="howto_nutriscore_c">Qualité nutritionnelle moyenne</string>
+    <string name="howto_nutriscore_d">Qualité nutritionnelle médiocre</string>
+    <string name="howto_nutriscore_e">Qualité nutritionnelle très mauvaise</string>
+    <string name="howto_nutriscore_note">Le calcul prend en compte : calories, sucres, acides gras saturés, sel (négatifs) et fibres, protéines, fruits/légumes (positifs).</string>
+    <string name="howto_nova_title">🏭 Score NOVA</string>
+    <string name="howto_nova_text">Le système NOVA classe les aliments selon le degré de transformation industrielle, pas selon la qualité nutritionnelle :</string>
+    <string name="howto_nova_1">Aliments non transformés ou peu transformés (fruits, légumes, viande fraîche, lait)</string>
+    <string name="howto_nova_2">Ingrédients culinaires (huile, beurre, sel, sucre)</string>
+    <string name="howto_nova_3">Aliments transformés (conserves, fromages, pain artisanal)</string>
+    <string name="howto_nova_4">Produits ultra-transformés (snacks, sodas, plats préparés industriels)</string>
+    <string name="howto_nova_note">Les aliments ultra-transformés (NOVA 4) sont associés à des risques accrus pour la santé en cas de consommation excessive.</string>
+    <string name="howto_ecoscore_title">🌍 Eco-Score</string>
+    <string name="howto_ecoscore_text">L\'Eco-Score évalue l\'impact environnemental des produits alimentaires en considérant l\'ensemble du cycle de vie : production, transport, emballage et fin de vie :</string>
+    <string name="howto_ecoscore_a">Impact environnemental très faible - Produit écoresponsable</string>
+    <string name="howto_ecoscore_b">Impact environnemental faible - Bon choix écologique</string>
+    <string name="howto_ecoscore_c">Impact environnemental modéré - Impact dans la moyenne</string>
+    <string name="howto_ecoscore_d">Impact environnemental élevé - Envisagez des alternatives plus durables</string>
+    <string name="howto_ecoscore_e">Impact environnemental très élevé - Fort impact sur l\'environnement</string>
+    <string name="howto_ecoscore_note">Le calcul prend en compte : émissions de CO₂, consommation d\'eau, utilisation des sols, emballage, transport et biodiversité. Bonus pour certifications bio, commerce équitable et emballages recyclables.</string>
+    <string name="howto_profile_title">👤 Profil Personnel</string>
+    <string name="howto_profile_text">Configurez votre profil avec :\n\n• Préférences alimentaires (végan, végétarien, halal)\n• Niveau de prudence sur les additifs\n• Allergies et intolérances (14 allergènes UE + nickel)\n• Intolérances personnalisées (ajoutez des ingrédients spécifiques à éviter)\n\nVous recevrez des alertes automatiques lorsqu\'un produit contient des additifs ou des ingrédients incompatibles avec votre profil.</string>
+    <string name="howto_features_title">⭐ Autres Fonctionnalités</string>
+    <string name="howto_features_text">• Favoris : Enregistrez les produits que vous scannez le plus souvent\n• Historique : Consultez vos scans précédents\n• Partage : Partagez les résultats avec vos proches\n• Hors-ligne : La recherche manuelle fonctionne même sans internet</string>
+    <string name="howto_data_title">📚 Sources des Données</string>
+    <string name="howto_data_text">• Base de données locale : +400 additifs avec descriptions détaillées\n• Open Food Facts : Base de données collaborative de produits alimentaires\n• EFSA : Autorité Européenne de Sécurité des Aliments\n\n⚠️ Note : La détection automatique dépend de la qualité des données sur Open Food Facts. Certains produits peuvent avoir des ingrédients manquants ou incomplets dans la base de données. Pour des résultats fiables, utilisez toujours la recherche manuelle.\n\n📧 Signalements : Si vous trouvez des produits avec des données manquantes ou incorrectes, écrivez-nous à faustobe.azs@gmail.com</string>
+    <string name="howto_tips_title">💡 Conseils</string>
+    <string name="howto_tips_text">• Configurez le profil pour des alertes personnalisées\n• Utilisez le partage pour envoyer les résultats\n• Consultez les ingrédients complets quand ils sont disponibles\n• Touchez un additif pour voir tous les détails\n• Utilisez la recherche manuelle pour explorer la base de données</string>
+
+    <!-- About Activity -->
+    <string name="about_title">À propos</string>
+    <string name="about_subtitle">Scanner d\'Additifs Alimentaires</string>
+    <string name="about_version">Version %s</string>
+    <string name="about_info_title">ℹ️ Informations</string>
+    <string name="about_info_text">E-Codes est une application gratuite qui vous aide à identifier et comprendre les additifs alimentaires présents dans les produits que vous consommez au quotidien.\n\nScannez le code-barres ou recherchez manuellement pour obtenir des informations détaillées sur la sécurité, l\'origine et la classification des additifs.</string>
+    <string name="about_developer_title">👨‍💻 Développeur</string>
+    <string name="about_developer_text">Développé par</string>
+    <string name="about_sources_title">📚 Sources des Données</string>
+    <string name="about_sources_text">• Base de données locale d\'additifs alimentaires\n• Open Food Facts API (produits)\n• EFSA - Autorité Européenne de Sécurité des Aliments</string>
+    <string name="about_libraries_title">🛠 Bibliothèques Open Source</string>
+    <string name="about_libraries_text">• CameraX (Google)\n• ML Kit Barcode Scanning (Google)\n• Material Design Components\n• OkHttp</string>
+    <string name="about_privacy_title">🔒 Confidentialité</string>
+    <string name="about_privacy_text">E-Codes respecte votre vie privée :\n\n• Aucune donnée personnelle collectée\n• Aucun compte requis\n• Toutes les données enregistrées localement\n• Aucun suivi ni analyse\n• Connexion internet uniquement pour la base de données Open Food Facts</string>
+    <string name="about_disclaimer_title">⚠️ Avertissement</string>
+    <string name="about_disclaimer_text">Cette application fournit des informations sur les additifs alimentaires à des fins éducatives. Elle ne remplace pas l\'avis d\'un médecin ou d\'un nutritionniste. En cas d\'allergies graves ou de conditions médicales, consultez toujours un professionnel.</string>
+    <string name="about_changelog_button">📝 Voir le changelog complet</string>
+
+    <!-- Changelog Activity -->
+    <string name="changelog_title">Changelog</string>
+    <string name="changelog_current_badge">🎉 ACTUEL</string>
+    <string name="changelog_v1_title">Version 1.0 - Sortie Initiale</string>
+    <string name="changelog_v1_date">Janvier 2026</string>
+    <string name="changelog_v1_subtitle">🎊 Première version publique</string>
+    <string name="changelog_v1_features">• Scanner code-barres avec intégration Open Food Facts\n• Recherche manuelle dans la base de données locale (+400 additifs)\n• Classification des additifs (A-F) avec codes couleur\n• Profil personnel avec préférences alimentaires\n• Alertes automatiques pour végans, végétariens, halal\n• Niveaux de prudence personnalisables\n• Alertes intolérances\n• Historique des scans\n• Favoris\n• Partage des résultats\n• Guide d\'utilisation complet\n• 100% Confidentialité : données uniquement sur l\'appareil</string>
+    <string name="changelog_footer">Merci d\'avoir choisi E-Codes ! 💚</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_camera_permission">Permission de la caméra requise pour le scanner code-barres</string>
+    <string name="toast_camera_error">Erreur au démarrage de la caméra</string>
+    <string name="toast_connection_error">Impossible de se connecter à Open Food Facts. Vérifiez la connexion internet.</string>
+    <string name="toast_no_network">Pas de connexion internet\nVérifiez le WiFi ou les données mobiles</string>
+    <string name="toast_product_not_found">Produit non trouvé dans la base de données Open Food Facts</string>
+    <string name="toast_parsing_error">Erreur lors du traitement des données du produit</string>
+
+    <!-- Error Messages -->
+    <string name="error_connection">Erreur de connexion\nVérifiez le WiFi ou les données mobiles</string>
+    <string name="error_product_not_found">Produit non trouvé\nEssayez un autre ou utilisez la recherche manuelle</string>
+    <string name="error_parsing">Erreur de lecture des données\nRéessayez ou utilisez la recherche manuelle</string>
+    <string name="error_no_network">Pas de connexion internet</string>
+
+    <!-- Allergen Alerts -->
+    <string name="allergen_alert_title">⚠️ ALERTE ALLERGÈNES</string>
+    <string name="allergen_found_intro">Le produit contient des ingrédients pouvant provoquer des réactions allergiques selon votre profil :</string>
+    <string name="allergen_keywords_found">Ingrédients détectés :</string>
+    <string name="allergen_ecodes_found">Codes E détectés :</string>
+
+    <!-- Classification Labels -->
+    <string name="classification_a">A - Non toxique</string>
+    <string name="classification_b">B - Risque d\'intolérance</string>
+    <string name="classification_c">C - Suspect</string>
+    <string name="classification_d">D - Déconseillé</string>
+    <string name="classification_e">E - Toxique</string>
+    <string name="classification_f">F - Interdit</string>
+    <string name="classification_n">N - Neutre</string>
+    <string name="classification_unknown">Inconnu</string>
+
+    <!-- Classification Labels (short) -->
+    <string name="classification_a_short">Non toxique</string>
+    <string name="classification_b_short">Risque d\'intolérance</string>
+    <string name="classification_c_short">Produit suspect</string>
+    <string name="classification_d_short">Fort soupçon de toxicité</string>
+    <string name="classification_e_short">DANGEREUX !</string>
+    <string name="classification_f_short">Non autorisé dans l\'UE</string>
+    <string name="classification_n_short">Neutre</string>
+    <string name="classification_unknown_short">Inconnu</string>
+
+    <!-- Classification Labels (long) -->
+    <string name="classification_a_long">Produit non toxique</string>
+    <string name="classification_b_long">Risque d\'intolérance</string>
+    <string name="classification_c_long">Attention ! Produit suspect</string>
+    <string name="classification_d_long">Fort soupçon de toxicité - Éviter si possible</string>
+    <string name="classification_e_long">DANGEREUX ! La substance pourrait être responsable de troubles et maladies graves</string>
+    <string name="classification_f_long">Non autorisé dans l\'UE - Utilisation interdite</string>
+    <string name="classification_n_long">Neutre - Aucune preuve particulière</string>
+    <string name="classification_unknown_long">Classification inconnue</string>
+
+    <!-- Yes/No/Unknown labels -->
+    <string name="yes">✓ Oui</string>
+    <string name="no">✗ Non</string>
+    <string name="unknown">\? Inconnu</string>
+
+    <!-- EFSA Status -->
+    <string name="efsa_approved">✓ Approuvé</string>
+    <string name="efsa_under_review">⚠ En cours de révision</string>
+    <string name="efsa_banned">✗ Interdit</string>
+    <string name="efsa_caution">⚠ Prudence</string>
+</resources>

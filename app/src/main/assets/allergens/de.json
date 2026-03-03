@@ -1,0 +1,388 @@
+{
+  "lactose": {
+    "keywords": [
+      "milch",
+      "laktose",
+      "lactose",
+      "molke",
+      "kasein",
+      "casein",
+      "kaseinat",
+      "caseinate",
+      "butter",
+      "sahne",
+      "rahm",
+      "joghurt",
+      "jogurt",
+      "käse",
+      "buttermilch",
+      "laktoglobulin",
+      "laktalbumin",
+      "milchpulver",
+      "magermilch",
+      "vollmilch",
+      "milcheiweiß",
+      "milchprotein",
+      "milchprodukte",
+      "milcherzeugnisse",
+      "ricotta",
+      "mascarpone",
+      "mozzarella",
+      "parmesan",
+      "quark"
+    ],
+    "exclusions": [
+      "milchfrei",
+      "laktosefrei",
+      "lactosefrei",
+      "ohne milch",
+      "ohne laktose",
+      "ohne lactose",
+      "enthält keine milch",
+      "enthält keine laktose",
+      "lactose free",
+      "milk free",
+      "dairy free",
+      "ohne milchprodukte",
+      "milchsäure",
+      "laktat",
+      "natriumlaktat",
+      "calciumlaktat",
+      "kaliumlaktat",
+      "stearoyllactylat"
+    ],
+    "e_codes": [
+      "E270",
+      "E325",
+      "E326",
+      "E327",
+      "E472b",
+      "E480",
+      "E481",
+      "E482",
+      "E585",
+      "E966"
+    ]
+  },
+  "gluten": {
+    "keywords": [
+      "weizen",
+      "gerste",
+      "roggen",
+      "dinkel",
+      "kamut",
+      "gluten",
+      "malz",
+      "gerstenmalz",
+      "malzextrakt",
+      "weizenmehl",
+      "grieß",
+      "kleie",
+      "weizenstärke",
+      "weizenprotein",
+      "triticale",
+      "seitan",
+      "bulgur",
+      "couscous",
+      "paniermehl",
+      "semmelbrösel",
+      "emmer",
+      "einkorn",
+      "hartweizen"
+    ],
+    "exclusions": [
+      "glutenfrei",
+      "ohne gluten",
+      "enthält kein gluten",
+      "gluten free",
+      "glutamat",
+      "mononatriumglutamat"
+    ],
+    "e_codes": [
+      "E1404",
+      "E1410",
+      "E1412",
+      "E1413",
+      "E1414",
+      "E1420",
+      "E1422",
+      "E1440",
+      "E1442",
+      "E1450"
+    ]
+  },
+  "eggs": {
+    "keywords": [
+      "ei",
+      "eier",
+      "eigelb",
+      "eiklar",
+      "eiweiß",
+      "albumin",
+      "eipulver",
+      "trockenei",
+      "eilecithin",
+      "lysozym",
+      "ovalbumin",
+      "ovomucin",
+      "mayonnaise",
+      "baiser",
+      "meringue",
+      "vollei",
+      "pasteurisiertes ei"
+    ],
+    "exclusions": [
+      "ohne ei",
+      "ohne eier",
+      "eifrei",
+      "enthält keine eier",
+      "enthält kein ei",
+      "egg free"
+    ],
+    "e_codes": [
+      "E1105"
+    ]
+  },
+  "peanuts": {
+    "keywords": [
+      "erdnuss",
+      "erdnüsse",
+      "erdnussbutter",
+      "erdnussöl",
+      "erdnussmehl",
+      "erdnusspaste"
+    ],
+    "e_codes": []
+  },
+  "tree_nuts": {
+    "keywords": [
+      "haselnuss",
+      "haselnüsse",
+      "mandel",
+      "mandeln",
+      "walnuss",
+      "walnüsse",
+      "pistazie",
+      "pistazien",
+      "cashew",
+      "cashewnuss",
+      "macadamia",
+      "paranuss",
+      "paranüsse",
+      "pekannuss",
+      "pekannüsse",
+      "pinienkern",
+      "pinienkerne",
+      "kastanie",
+      "kastanien",
+      "marone",
+      "maronen",
+      "haselnussmehl",
+      "mandelmehl",
+      "haselnusspaste",
+      "mandelpaste",
+      "marzipan",
+      "nougat",
+      "schalenfrüchte",
+      "nüsse"
+    ],
+    "e_codes": []
+  },
+  "fish": {
+    "keywords": [
+      "fisch",
+      "kabeljau",
+      "dorsch",
+      "thunfisch",
+      "lachs",
+      "sardelle",
+      "sardellen",
+      "anchovis",
+      "sardine",
+      "sardinen",
+      "makrele",
+      "dorade",
+      "barsch",
+      "forelle",
+      "seezunge",
+      "scholle",
+      "seehecht",
+      "stockfisch",
+      "fischsauce",
+      "fischöl",
+      "fischgelatine",
+      "surimi"
+    ],
+    "e_codes": []
+  },
+  "crustaceans": {
+    "keywords": [
+      "krebstier",
+      "krebstiere",
+      "garnele",
+      "garnelen",
+      "krabbe",
+      "krabben",
+      "hummer",
+      "krebs",
+      "krebse",
+      "languste",
+      "langustine",
+      "scampi",
+      "shrimp",
+      "shrimps",
+      "meeresfrüchte"
+    ],
+    "e_codes": []
+  },
+  "mollusks": {
+    "keywords": [
+      "weichtier",
+      "weichtiere",
+      "muschel",
+      "muscheln",
+      "miesmuschel",
+      "miesmuscheln",
+      "venusmuschel",
+      "auster",
+      "austern",
+      "tintenfisch",
+      "kalmar",
+      "sepia",
+      "oktopus",
+      "jakobsmuschel",
+      "schnecke",
+      "schnecken"
+    ],
+    "e_codes": []
+  },
+  "soy": {
+    "keywords": [
+      "soja",
+      "soya",
+      "sojabohne",
+      "sojabohnen",
+      "sojamehl",
+      "sojaöl",
+      "sojalecithin",
+      "sojaprotein",
+      "sojaeiweiß",
+      "sojamilch",
+      "sojasoße",
+      "sojasauce",
+      "tofu",
+      "tempeh",
+      "miso",
+      "edamame",
+      "sojasprossen"
+    ],
+    "exclusions": [
+      "ohne soja",
+      "sojafrei",
+      "enthält kein soja",
+      "soy free"
+    ],
+    "e_codes": [
+      "E322",
+      "E426"
+    ]
+  },
+  "celery": {
+    "keywords": [
+      "sellerie",
+      "knollensellerie",
+      "stangensellerie",
+      "selleriesalz",
+      "sellerieextrakt",
+      "selleriesamen"
+    ],
+    "e_codes": []
+  },
+  "mustard": {
+    "keywords": [
+      "senf",
+      "senfkörner",
+      "senfsamen",
+      "senfmehl",
+      "senföl",
+      "senfsauce"
+    ],
+    "e_codes": []
+  },
+  "sesame": {
+    "keywords": [
+      "sesam",
+      "sesamkörner",
+      "sesamsamen",
+      "sesamöl",
+      "sesampaste",
+      "tahini",
+      "tahina",
+      "gomasio"
+    ],
+    "e_codes": []
+  },
+  "lupin": {
+    "keywords": [
+      "lupine",
+      "lupinen",
+      "lupinenmehl",
+      "lupinensamen"
+    ],
+    "e_codes": []
+  },
+  "sulfites": {
+    "keywords": [
+      "sulfit",
+      "sulfite",
+      "schwefeldioxid",
+      "bisulfit",
+      "metabisulfit",
+      "natriumsulfit",
+      "kaliumsulfit"
+    ],
+    "e_codes": [
+      "E220",
+      "E221",
+      "E222",
+      "E223",
+      "E224",
+      "E226",
+      "E227",
+      "E228"
+    ]
+  },
+  "nickel": {
+    "keywords": [
+      "kakao",
+      "schokolade",
+      "haselnuss",
+      "haselnüsse",
+      "mandel",
+      "mandeln",
+      "walnuss",
+      "walnüsse",
+      "erdnuss",
+      "erdnüsse",
+      "lakritz",
+      "süßholz",
+      "hafer",
+      "haferkleie",
+      "hafermehl",
+      "sojamehl",
+      "soja",
+      "linsen",
+      "kichererbsen",
+      "bohnen",
+      "erbsen",
+      "spinat",
+      "tomate",
+      "tomatenmark"
+    ],
+    "e_codes": [
+      "E150c",
+      "E150d",
+      "E952"
+    ]
+  }
+}

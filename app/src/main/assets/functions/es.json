@@ -1,0 +1,23 @@
+{
+  "colorante": "colorante",
+  "conservante": "conservante",
+  "antioxidante": "antiossidante",
+  "edulcorante": "dolcificante",
+  "endulzante": "dolcificante",
+  "emulsionante": "emulsionante",
+  "emulgente": "emulsionante",
+  "espesante": "addensante",
+  "estabilizante": "stabilizzante",
+  "estabilizador": "stabilizzante",
+  "acidificante": "acidificante",
+  "corrector de acidez": "correttore",
+  "regulador de acidez": "correttore",
+  "gelificante": "gelificante",
+  "gasificante": "agente lievitante",
+  "leudante": "agente lievitante",
+  "potenciador del sabor": "esaltatore",
+  "realzador del sabor": "esaltatore",
+  "humectante": "umidificante",
+  "antiaglomerante": "antiagglomerante",
+  "antiapelmazante": "antiagglomerante"
+}

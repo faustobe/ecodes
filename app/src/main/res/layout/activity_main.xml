@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#F5F5F5">
+    android:background="#F5F5F5"
+    android:fitsSystemWindows="true">
 
     <!-- Header -->
     <LinearLayout
@@ -96,7 +97,8 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Oppure cerca manualmente"
+            android:hint="@string/main_search_hint"
+            android:textColorHint="#757575"
             app:boxBackgroundMode="outline"
             app:boxStrokeWidth="2dp"
             app:boxStrokeColor="#4CAF50"
@@ -104,7 +106,6 @@
             app:boxCornerRadiusTopEnd="8dp"
             app:boxCornerRadiusBottomStart="8dp"
             app:boxCornerRadiusBottomEnd="8dp"
-            app:startIconDrawable="@android:drawable/ic_menu_search"
             app:hintTextColor="#4CAF50"
             app:hintEnabled="true">
 
@@ -112,9 +113,7 @@
                 android:id="@+id/searchEdit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/main_search_hint"
                 android:textColor="#212121"
-                android:textColorHint="#757575"
                 android:inputType="text"
                 android:maxLines="1" />
 

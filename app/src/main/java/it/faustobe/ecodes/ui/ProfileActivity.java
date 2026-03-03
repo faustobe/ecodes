@@ -120,6 +120,12 @@ public class ProfileActivity extends BaseActivity {
         String currentLang = prefs.getString(KEY_LANGUAGE, "it");
         if ("en".equals(currentLang)) {
             ((RadioButton) findViewById(R.id.radioLangEnglish)).setChecked(true);
+        } else if ("es".equals(currentLang)) {
+            ((RadioButton) findViewById(R.id.radioLangSpanish)).setChecked(true);
+        } else if ("fr".equals(currentLang)) {
+            ((RadioButton) findViewById(R.id.radioLangFrench)).setChecked(true);
+        } else if ("de".equals(currentLang)) {
+            ((RadioButton) findViewById(R.id.radioLangGerman)).setChecked(true);
         } else {
             ((RadioButton) findViewById(R.id.radioLangItalian)).setChecked(true);
         }
@@ -218,6 +224,12 @@ public class ProfileActivity extends BaseActivity {
             String newLang;
             if (checkedId == R.id.radioLangEnglish) {
                 newLang = "en";
+            } else if (checkedId == R.id.radioLangSpanish) {
+                newLang = "es";
+            } else if (checkedId == R.id.radioLangFrench) {
+                newLang = "fr";
+            } else if (checkedId == R.id.radioLangGerman) {
+                newLang = "de";
             } else {
                 newLang = "it";
             }

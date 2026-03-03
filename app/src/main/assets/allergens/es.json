@@ -1,0 +1,375 @@
+{
+  "lactose": {
+    "keywords": [
+      "leche",
+      "lactosa",
+      "suero de leche",
+      "caseína",
+      "caseinato",
+      "caseinatos",
+      "mantequilla",
+      "nata",
+      "crema de leche",
+      "yogur",
+      "queso",
+      "suero lácteo",
+      "lactoglobulina",
+      "lactoalbúmina",
+      "leche en polvo",
+      "leche desnatada",
+      "leche entera",
+      "proteínas de leche",
+      "proteína de leche",
+      "derivados lácteos",
+      "lácteos",
+      "ricotta",
+      "mascarpone",
+      "mozzarella",
+      "parmesano",
+      "requesón"
+    ],
+    "exclusions": [
+      "sin leche",
+      "sin lactosa",
+      "libre de lactosa",
+      "libre de leche",
+      "no contiene leche",
+      "no contiene lactosa",
+      "deslactosado",
+      "lactose free",
+      "milk free",
+      "dairy free",
+      "sin lácteos",
+      "ácido láctico",
+      "lactato",
+      "lactato de sodio",
+      "lactato de calcio",
+      "lactato de potasio",
+      "estearoil lactilato"
+    ],
+    "e_codes": [
+      "E270",
+      "E325",
+      "E326",
+      "E327",
+      "E472b",
+      "E480",
+      "E481",
+      "E482",
+      "E585",
+      "E966"
+    ]
+  },
+  "gluten": {
+    "keywords": [
+      "trigo",
+      "cebada",
+      "centeno",
+      "espelta",
+      "kamut",
+      "gluten",
+      "malta",
+      "malta de cebada",
+      "extracto de malta",
+      "harina de trigo",
+      "sémola",
+      "semolina",
+      "salvado",
+      "almidón de trigo",
+      "proteína de trigo",
+      "triticale",
+      "seitán",
+      "bulgur",
+      "cuscús",
+      "pan rallado",
+      "escanda",
+      "trigo duro"
+    ],
+    "exclusions": [
+      "sin gluten",
+      "libre de gluten",
+      "no contiene gluten",
+      "gluten free",
+      "glutamato",
+      "glutamato monosódico"
+    ],
+    "e_codes": [
+      "E1404",
+      "E1410",
+      "E1412",
+      "E1413",
+      "E1414",
+      "E1420",
+      "E1422",
+      "E1440",
+      "E1442",
+      "E1450"
+    ]
+  },
+  "eggs": {
+    "keywords": [
+      "huevo",
+      "huevos",
+      "yema",
+      "yema de huevo",
+      "clara de huevo",
+      "albúmina",
+      "huevo en polvo",
+      "huevo deshidratado",
+      "lecitina de huevo",
+      "lisozima",
+      "ovoalbúmina",
+      "ovomucina",
+      "mayonesa",
+      "merengue",
+      "huevo entero",
+      "huevo pasteurizado"
+    ],
+    "exclusions": [
+      "sin huevo",
+      "sin huevos",
+      "libre de huevo",
+      "no contiene huevo",
+      "no contiene huevos",
+      "egg free"
+    ],
+    "e_codes": [
+      "E1105"
+    ]
+  },
+  "peanuts": {
+    "keywords": [
+      "cacahuete",
+      "cacahuetes",
+      "maní",
+      "mantequilla de cacahuete",
+      "aceite de cacahuete",
+      "crema de cacahuete",
+      "harina de cacahuete"
+    ],
+    "e_codes": []
+  },
+  "tree_nuts": {
+    "keywords": [
+      "avellana",
+      "avellanas",
+      "almendra",
+      "almendras",
+      "nuez",
+      "nueces",
+      "pistacho",
+      "pistachos",
+      "anacardo",
+      "anacardos",
+      "macadamia",
+      "nuez de brasil",
+      "nueces de brasil",
+      "nuez pecana",
+      "nueces pecanas",
+      "piñón",
+      "piñones",
+      "castaña",
+      "castañas",
+      "harina de avellana",
+      "harina de almendra",
+      "pasta de avellana",
+      "pasta de almendra",
+      "mazapán",
+      "praliné",
+      "frutos secos"
+    ],
+    "e_codes": []
+  },
+  "fish": {
+    "keywords": [
+      "pescado",
+      "bacalao",
+      "atún",
+      "salmón",
+      "anchoa",
+      "anchoas",
+      "boquerón",
+      "boquerones",
+      "sardina",
+      "sardinas",
+      "caballa",
+      "dorada",
+      "lubina",
+      "trucha",
+      "lenguado",
+      "merluza",
+      "bacalao seco",
+      "salsa de pescado",
+      "aceite de pescado",
+      "gelatina de pescado",
+      "surimi"
+    ],
+    "e_codes": []
+  },
+  "crustaceans": {
+    "keywords": [
+      "crustáceo",
+      "crustáceos",
+      "gamba",
+      "gambas",
+      "langostino",
+      "langostinos",
+      "camarón",
+      "camarones",
+      "langosta",
+      "cangrejo",
+      "cangrejos",
+      "cigala",
+      "cigalas",
+      "marisco"
+    ],
+    "e_codes": []
+  },
+  "mollusks": {
+    "keywords": [
+      "molusco",
+      "moluscos",
+      "mejillón",
+      "mejillones",
+      "almeja",
+      "almejas",
+      "ostra",
+      "ostras",
+      "calamar",
+      "calamares",
+      "sepia",
+      "pulpo",
+      "vieira",
+      "vieiras",
+      "caracol",
+      "caracoles"
+    ],
+    "e_codes": []
+  },
+  "soy": {
+    "keywords": [
+      "soja",
+      "soya",
+      "semillas de soja",
+      "harina de soja",
+      "aceite de soja",
+      "lecitina de soja",
+      "proteína de soja",
+      "proteínas de soja",
+      "leche de soja",
+      "salsa de soja",
+      "tofu",
+      "tempeh",
+      "miso",
+      "edamame",
+      "brotes de soja"
+    ],
+    "exclusions": [
+      "sin soja",
+      "libre de soja",
+      "no contiene soja",
+      "soy free"
+    ],
+    "e_codes": [
+      "E322",
+      "E426"
+    ]
+  },
+  "celery": {
+    "keywords": [
+      "apio",
+      "apio nabo",
+      "sal de apio",
+      "extracto de apio",
+      "semillas de apio"
+    ],
+    "e_codes": []
+  },
+  "mustard": {
+    "keywords": [
+      "mostaza",
+      "semillas de mostaza",
+      "harina de mostaza",
+      "aceite de mostaza",
+      "salsa de mostaza"
+    ],
+    "e_codes": []
+  },
+  "sesame": {
+    "keywords": [
+      "sésamo",
+      "semillas de sésamo",
+      "aceite de sésamo",
+      "pasta de sésamo",
+      "tahini",
+      "tahina",
+      "gomasio",
+      "ajonjolí"
+    ],
+    "e_codes": []
+  },
+  "lupin": {
+    "keywords": [
+      "altramuz",
+      "altramuces",
+      "lupino",
+      "harina de altramuz",
+      "harina de lupino",
+      "semillas de altramuz"
+    ],
+    "e_codes": []
+  },
+  "sulfites": {
+    "keywords": [
+      "sulfito",
+      "sulfitos",
+      "dióxido de azufre",
+      "bisulfito",
+      "metabisulfito",
+      "anhídrido sulfuroso"
+    ],
+    "e_codes": [
+      "E220",
+      "E221",
+      "E222",
+      "E223",
+      "E224",
+      "E226",
+      "E227",
+      "E228"
+    ]
+  },
+  "nickel": {
+    "keywords": [
+      "cacao",
+      "chocolate",
+      "avellana",
+      "avellanas",
+      "almendra",
+      "almendras",
+      "nuez",
+      "nueces",
+      "cacahuete",
+      "cacahuetes",
+      "regaliz",
+      "avena",
+      "salvado de avena",
+      "harina de avena",
+      "harina de soja",
+      "soja",
+      "lentejas",
+      "garbanzos",
+      "judías",
+      "frijoles",
+      "guisantes",
+      "espinacas",
+      "tomate",
+      "concentrado de tomate"
+    ],
+    "e_codes": [
+      "E150c",
+      "E150d",
+      "E952"
+    ]
+  }
+}
